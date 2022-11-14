@@ -7,10 +7,9 @@ layout: default
         <div class="row gx-5">
             <div class="col-lg-3">
                 <div class="d-flex align-items-center mt-lg-5 mb-4">
-                    <img class="img-fluid rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." />
                     <div class="ms-3">
-                        <div class="fw-bold">Comp.A.S.</div>
-                        <div class="text-muted">Industria</div>
+                        <div class="fw-bold">Comp. A.S.</div>
+                        <div class="text-muted">Industria 4.0</div>
                     </div>
                 </div>
             </div>
@@ -20,67 +19,30 @@ layout: default
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Industria 4.0</h1>
+                        <h1 class="fw-bolder mb-1">Arquitectura de Red</h1>
                         <!-- Post meta content-->
-                        <div class="text-muted fst-italic mb-2">January 1, 2022</div>
+                        <div class="text-muted fst-italic mb-2">Noviembre 18, 2022</div>
                         <!-- Post categories-->
-                        <a class="badge bg-secondary text-decoration-none link-light" href="#!">Web Design</a>
-                        <a class="badge bg-secondary text-decoration-none link-light" href="#!">Freebies</a>
+                        <a class="badge bg-secondary text-decoration-none link-light" href="#!">IoT</a>
+                        <a class="badge bg-secondary text-decoration-none link-light" href="#!">Ignition</a>
+                        <a class="badge bg-secondary text-decoration-none link-light" href="#!">Azure</a>
                     </header>
                     <!-- Preview image figure-->
-                    <figure class="mb-4"><img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure>
+                    <figure class="mb-4"><img class="img-fluid rounded" src="https://lucid.app/publicSegments/view/0ac65b9e-3480-4a5a-bbfa-17a2713a8065/image.png" alt="..." /></figure>
                     <!-- Post content-->
                     <section class="mb-5">
-                        <p class="fs-5 mb-4">"Science" is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe.</p>
-                        <p class="fs-5 mb-4">The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-5 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                        <h2 class="fw-bolder mb-4 mt-5">I have odd cosmic thoughts every day</h2>
-                        <p class="fs-5 mb-4">For me, the most fascinating interface is Twitter. I have odd cosmic thoughts every day and I realized I could hold them to myself or share them with people who might be interested.</p>
-                        <p class="fs-5 mb-4">Venus has a runaway greenhouse effect. I kind of want to know what happened there because we're twirling knobs here on Earth without knowing the consequences of it. Mars once had running water. It's bone dry today. Something bad happened there as well.</p>
+                        <p class="fs-5 mb-4">Para este proyecto se hizo uso de Ignition como fuente principal de consumo de datos, por lo cual se creo y configuró un servicio de Ignition Local que obtiene las etiquetas de control y las envía al gemelo digital tanto en NX como en RobotStudio. De esta forma se asegura un canal de comunicación continuo y único.</p>
+                        <p class="fs-5 mb-4">En el servicio de Ignition Local se configuro el módulo MQTT Transmission proporcionado por Cirrus Link Solutions para permitir la comunicación al Ignition Nube que está alojado en Azure por medio de una instancia de contenedor que tiene configurada la persistencia de datos en un storage account.</p>
+                        <p class="fs-5 mb-4">Adicionalmente Ignition Nube tiene configurado los módulos MQTT Engine que permite interactuar con los tags publicada y MQTT Distributor el cual genera un servidor MQTT en Ignition para la administración y comunicación de la información.</p>
+                        <h2 class="fw-bolder mb-4 mt-5">Ignition Nube</h2>
+                        <p class="fs-5 mb-4">La arquitectura de Ignition Nube se basa en el esquema de contenedores por lo cual se tomó como imagen base la versión 8.1.22 de Ignition y en este se configuraron 3 volúmenes de persistencia de datos, los volúmenes configurados fueron: </p>
+                        <ul>
+                            <li>Data: el cual permite la persistencia de casi el 90% de las configuraciones y datos almacenados en Ignition</li>
+                            <li>Modules: el cual permite la persistencia e instalación automática de los módulos de terceros</li>
+                            <li>Logs: el cual almacena los logs del servicio</li>
+                        </ul>
                     </section>
                 </article>
-                <!-- Comments section-->
-                <section>
-                    <div class="card bg-light">
-                        <div class="card-body">
-                            <!-- Comment form-->
-                            <form class="mb-4"><textarea class="form-control" rows="3" placeholder="Join the discussion and leave a comment!"></textarea></form>
-                            <!-- Comment with nested comments-->
-                            <div class="d-flex mb-4">
-                                <!-- Parent comment-->
-                                <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                <div class="ms-3">
-                                    <div class="fw-bold">Commenter Name</div>
-                                    If you're going to lead a space frontier, it has to be government; it'll never be private enterprise. Because the space frontier is dangerous, and it's expensive, and it has unquantified risks.
-                                    <!-- Child comment 1-->
-                                    <div class="d-flex mt-4">
-                                        <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                        <div class="ms-3">
-                                            <div class="fw-bold">Commenter Name</div>
-                                            And under those conditions, you cannot establish a capital-market evaluation of that enterprise. You can't get investors.
-                                        </div>
-                                    </div>
-                                    <!-- Child comment 2-->
-                                    <div class="d-flex mt-4">
-                                        <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                        <div class="ms-3">
-                                            <div class="fw-bold">Commenter Name</div>
-                                            When you put money directly to a problem, it makes a good headline.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single comment-->
-                            <div class="d-flex">
-                                <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                <div class="ms-3">
-                                    <div class="fw-bold">Commenter Name</div>
-                                    When I look at the universe and all the ways the universe wants to kill us, I find it hard to reconcile that with statements of beneficence.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </div>
         </div>
     </div>

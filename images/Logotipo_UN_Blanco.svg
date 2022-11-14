@@ -7,11 +7,37 @@
    viewBox="0 0 245 245"
    id="svg2"
    version="1.1"
+   sodipodi:docname="Logotipo_UN_Blanco.svg"
+   inkscape:export-filename="Logotipo_UN_Blanco.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview43"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="3.322449"
+     inkscape:cx="122.65049"
+     inkscape:cy="123.85442"
+     inkscape:window-width="1600"
+     inkscape:window-height="1121"
+     inkscape:window-x="2391"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g4233" />
   <defs
      id="defs4" />
   <metadata
@@ -54,7 +80,7 @@
          d="m 247.08594,445.45898 c 0.0113,7.74479 -0.0165,15.50495 0.002,23.24219 -1e-4,12.83558 7.52438,23.24219 23.24023,23.24219 7.65117,-0.013 15.53261,0 23.24219,0 l 0,-23.24219 0,-23.24219 -7.70508,0 0,24.10938 c 3.2e-4,8.14436 -6.95616,14.74667 -15.53711,14.74609 -8.58019,-4.5e-4 -15.53547,-6.60245 -15.53515,-14.74609 l 0,-24.10938 -7.70703,0 z"
          style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <path
-         style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          d="m 347.85393,491.94336 c -0.0113,-7.74479 0.0166,-15.50495 -0.002,-23.24219 1e-4,-12.83558 -7.52438,-23.24219 -23.24023,-23.24219 -7.65117,0.013 -15.53261,0 -23.24219,0 l 0,23.24219 0,23.24219 7.70508,0 0,-24.10938 c -3.2e-4,-8.14436 6.95616,-14.74667 15.53711,-14.74609 8.58019,4.5e-4 15.53547,6.60245 15.53515,14.74609 l 0,24.10938 7.70703,0 z"
          id="path4214" />
       <g
