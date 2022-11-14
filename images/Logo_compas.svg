@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="71.063667mm"
+   height="44.313118mm"
+   viewBox="0 0 71.063667 44.313118"
+   version="1.1"
+   id="svg299"
+   inkscape:export-filename="Logo_compas.svg"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview301"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <defs
+     id="defs296" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-53.792672,-12.668261)">
+    <rect
+       style="fill:#cccccc;stroke-width:0.2536;paint-order:stroke markers fill"
+       id="rect748"
+       width="70.175568"
+       height="23.993855"
+       x="53.792671"
+       y="12.668262"
+       rx="7.3265996"
+       ry="8" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.7px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="110.81208"
+       y="28.664162"
+       id="text640"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7px;font-family:'Agency FB';-inkscape-font-specification:'Agency FB';text-align:end;text-anchor:end;fill:#000000;stroke-width:0.264583"
+         x="110.81208"
+         y="28.664162"
+         id="tspan642">Comp. A. S.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;fill:#999999;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="90.293404"
+       y="45.860573"
+       id="text809"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS';text-align:center;text-anchor:middle;fill:#999999;stroke-width:0.264583"
+         x="90.293404"
+         y="45.860573"
+         id="tspan811">Computer Automation </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS';text-align:center;text-anchor:middle;fill:#999999;stroke-width:0.264583"
+         x="90.293404"
+         y="54.986664"
+         id="tspan815">Society</tspan></text>
+  </g>
+</svg>

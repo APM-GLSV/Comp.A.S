@@ -13,7 +13,7 @@ bundle install
 ``` ruby
 bundle exec jekyll serve
 ``` 
-5. En el navegador abrir la URL: http://127.0.0.1:4000/Catalogo/  
+5. En el navegador abrir la URL: http://127.0.0.1:4000/Comp.A.S/  
 6. Revisar los cambios realizados.  
 
 Más información en: [Documentacion de GitHub Pages](https://docs.github.com/es/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)
