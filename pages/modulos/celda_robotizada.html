@@ -10,12 +10,68 @@ layout: default
         <div class="row gx-5 justify-content-center">
             <h2>Hoja de Ruta Diseño de Celda de Manufactura</h2>
             <div class="d-flex align-items-center mt-lg-5 mb-4"><img class="img-fluid rounded-3 my-5" src="{{ site.baseurl }}/images/HojadeRuta_Celda.png" alt="Hoja de Ruta" /></div>
-            <h2>Diseño Preliminar</h2> 
+            <h1>Diseño Preliminar</h1> 
             <h2>Selección de etapa</h2>
-            <p> Selección de aplicación.  </p> 
-            <p> Estado de entrada y salida del producto de celda. </p>
-            <p> BOM preliminar, selección del manipulador. </p>
-            <p> Ciclo útil de la celda de manufactura. </p>
+            <section class="mb-5">
+                <p>Para esta aplicación de automatización se definieron dos etapas para el uso del gantry y del robot, la primera es la etapa de selección y la segunda la de paletizado, así se tiene que el gantry cumplirá las funciones de selección del paquete desde el almacén para llevarlo al inicio del proceso donde circulará por una banda transportadora hasta la siguiente etapa que será la etapa de identificación, posteriormente desde la etiquetadora llegará a la etapa de paletizado por medio de otra banda donde el robot se encargará de tomar las cajas y acomodarlas de la mejor forma en un Palet europeo mediano.</p>
+            </section>
+            <h2> Selección de aplicación.  </h2> 
+            <section class="mb-5">
+                <p>Como se describió anteriormente, el sistema gantry y el robot harán procesos de selección y paletizados entre los tres distintos tamaños de cajas que maneja el almacén por lo cual la aplicación del gantry será de tipo pick and place y el robot será paletizador. </p>
+            </section>
+            <h2> Estado de entrada y salida del producto de celda. </h2>
+            <section class="mb-5">
+                <h3>Pick and Place</h3>
+                <p class="fs-5 mb-4">Estado de entrada del producto</p>
+                <ul>
+                    <li>Producto en Almacén</li>
+                    <li>Caja según su Tamaño</li>
+                    <li>Caja con orientación específica en el almacén</li>
+                </ul>
+                <p class="fs-5 mb-4">Estado de salida del producto</p>
+                <ul>
+                    <li>Producto en banda transportadora</li>
+                    <li>Caja según orden del cliente</li>
+                    <li>Caja con orientación específica en el almacénla banda</li>
+            </section>
+            <h2> BOM preliminar, selección del manipulador. </h2>
+            <p><b>Celda Pick and Place, etapa de selección:</b></p>
+
+<ul>
+<li>1 Sistema Gantry Parker</li>
+<li>Barrera de Seguridad</li>
+<li>2 Paradas de emergencia (Tipo Comando Seguro)</li>
+<li>Enclavamiento de puerta</li>
+<li>Torres de luz</li>
+<li>Luz de advertencia</li>
+<li>Escanear laser de área</li>
+<li>Banda transportadora (Banda 1) Puede ser plana o de rodillos</li>
+<li>Sensor de ingreso de caja en banda 1</li>
+<li>Estante de almacenamiento</li>
+<li>Sensor de uso de almacenamiento por cajas</li>
+<li>Gripper</li>
+</ul>
+
+<p><b>Celda Paletizado, etapa de Paletizado:</b></p>
+
+<ul>
+<li>1 Robot ABB IRB 260</li>
+<li>1 Controlador de robot: Compacto</li>
+<li>Barrera de Seguridad</li>
+<li>2 Paradas de emergencia (Tipo Comando Seguro)</li>
+<li>Enclavamiento de puerta</li>
+<li>Torres de luz</li>
+<li>Luz de advertencia</li>
+<li>Escanear laser de área</li>
+<li>Banda transportadora (Banda 2) Inicialmente de rodillos para el uso de un centrador</li>
+<li>Sensor de llegada de caja en banda 2</li>
+<li>Lector codigo de barras para identificación del tamaño de caja</li>
+<li>Centrador de cajas</li>
+<li>Soporte para pallet</li>
+<li>Gripper</li>
+</ul>
+
+            <h2> Ciclo útil de la celda de manufactura. </h2>
             <h2> Evaluación de riesgos y peligros. </h2>
             <section class="mb-5">
                 <p class="fs-5 mb-4">Se realizó el respectivo análisis de posibles riesgos y peligros en la celda de manufactura asociada al proyecto en cuestión. Tras un exhaustivo análisis, se consideraron pertinentes los peligros establecidos en la siguiente lista:</p>
@@ -76,18 +132,16 @@ layout: default
                     th.style11 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#E2EEDA }
                     td.style12 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFF00 }
                     th.style12 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFF00 }
-                    td.style13 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFC000 }
-                    th.style13 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFC000 }
-                    td.style14 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#92D050 }
-                    th.style14 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#92D050 }
-                    td.style15 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFC000 }
-                    th.style15 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFC000 }
-                    td.style16 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#00FF00 }
-                    th.style16 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#00FF00 }
-                    td.style17 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FF0000 }
-                    th.style17 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FF0000 }
-                    td.style18 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
-                    th.style18 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+                    td.style13 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#92D050 }
+                    th.style13 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#92D050 }
+                    td.style14 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFC000 }
+                    th.style14 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFC000 }
+                    td.style15 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#00FF00 }
+                    th.style15 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#00FF00 }
+                    td.style16 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FF0000 }
+                    th.style16 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FF0000 }
+                    td.style17 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+                    th.style17 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
                     table.sheet0 col.col0 { width:167.41110919pt }
                     table.sheet0 col.col1 { width:69.13333254pt }
                     table.sheet0 col.col2 { width:56.25555491pt }
@@ -161,8 +215,8 @@ layout: default
                           <td class="column1 style2 s">Alto</td>
                           <td class="column2 style2 s">Bajo</td>
                           <td class="column3 style2 s">Se puede evitar</td>
-                          <td class="column4 style6 s">D</td>
-                          <td class="column5 style13 n">2%</td>
+                          <td class="column4 style5 s">C</td>
+                          <td class="column5 style12 n">2%</td>
                           <td class="column6 style2 s">Guantes de seguridad. No introducir alimentos ni bebidas a la celda. Realizar únicamente el contacto físico estrictamente necesario con los elementos de la celda.</td>
                           <td class="column7">&nbsp;</td>
                         </tr>
@@ -172,7 +226,7 @@ layout: default
                           <td class="column2 style2 s">Alto</td>
                           <td class="column3 style2 s">Se puede evitar</td>
                           <td class="column4 style7 s">B</td>
-                          <td class="column5 style14 n">6%</td>
+                          <td class="column5 style13 n">6%</td>
                           <td class="column6 style2 s">Casco de seguridad. Overol. Cabello recogido. Parada de emergencia.</td>
                           <td class="column7">&nbsp;</td>
                         </tr>
@@ -182,7 +236,7 @@ layout: default
                           <td class="column2 style2 s">Bajo</td>
                           <td class="column3 style2 s">Difícil de evitar</td>
                           <td class="column4 style7 s">B</td>
-                          <td class="column5 style14 n">3%</td>
+                          <td class="column5 style13 n">3%</td>
                           <td class="column6 style2 s">Overol. Casco de seguridad. Gafas de seguridad. Revisión y mantenimiento continuo.</td>
                           <td class="column7">&nbsp;</td>
                         </tr>
@@ -192,7 +246,7 @@ layout: default
                           <td class="column2 style2 s">Bajo</td>
                           <td class="column3 style2 s">Difícil de evitar</td>
                           <td class="column4 style6 s">D</td>
-                          <td class="column5 style15 n">1.50%</td>
+                          <td class="column5 style14 n">1.50%</td>
                           <td class="column6 style2 s">Overol. Casco de seguridad. Gafas de seguridad. Botas de seguridad. Revisión y mantenimiento continuo.</td>
                           <td class="column7">&nbsp;</td>
                         </tr>
@@ -202,7 +256,7 @@ layout: default
                           <td class="column2 style2 s">Bajo</td>
                           <td class="column3 style2 s">Fácil de evitar</td>
                           <td class="column4 style8 s">A</td>
-                          <td class="column5 style16 n">1%</td>
+                          <td class="column5 style15 n">1%</td>
                           <td class="column6 style2 s">Casco de seguridad. Overol. Cabello recogido.</td>
                           <td class="column7">&nbsp;</td>
                         </tr>
@@ -212,7 +266,7 @@ layout: default
                           <td class="column2 style2 s">Alto</td>
                           <td class="column3 style2 s">Difícil de evitar</td>
                           <td class="column4 style9 s">E</td>
-                          <td class="column5 style17 n">7%</td>
+                          <td class="column5 style16 n">7%</td>
                           <td class="column6 style2 s">Casco de seguridad. Botas de seguridad. Manual de reducción de riesgos.</td>
                           <td class="column7">&nbsp;</td>
                         </tr>
@@ -222,7 +276,7 @@ layout: default
                           <td class="column2 style2 s">Bajo</td>
                           <td class="column3 style2 s">Fácil de evitar</td>
                           <td class="column4 style8 s">A</td>
-                          <td class="column5 style16 n">3%</td>
+                          <td class="column5 style15 n">3%</td>
                           <td class="column6 style2 s">Guantes de seguridad. Overol. Cabello recogido.</td>
                           <td class="column7">&nbsp;</td>
                         </tr>
@@ -247,7 +301,7 @@ layout: default
                           <td class="column7">&nbsp;</td>
                         </tr>
                         <tr class="row12">
-                          <td class="column0 style18 null"></td>
+                          <td class="column0 style17 null"></td>
                           <td class="column1">&nbsp;</td>
                           <td class="column2">&nbsp;</td>
                           <td class="column3">&nbsp;</td>
