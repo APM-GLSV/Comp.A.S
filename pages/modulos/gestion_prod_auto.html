@@ -8,14 +8,18 @@ layout: default
             <div class="col-lg-6">
                 <div class="text-center mb-5">
                     <h1 class="fw-bolder">Gestión de la producción y automatización</h1>
-                    <p class="lead fw-normal text-muted mb-0">En este módulo se analiza la situación de la planta sin automatizar, se propone una solución de automatización con su respectivo análisis e indicadores. Finalmente, se propone la integración de esta planta con un sistema MES.</p>
+                    <p class="lead fw-normal text-muted mb-0">En este módulo se presenta la situación de la planta sin automatizar y se propone una solución de automatización con su respectivo análisis, indicadores y VSM. Finalmente, se propone la integración de esta planta con un sistema MES.</p>
                 </div>
             </div>
         </div>
         <div class="row gx-5">
             <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/ProductionManagement1.jpg" alt="..." /></div>
             <section class="mb-5">
-                <p class="fs-5 mb-4">  Como resultado del análisis del documento base y de los datos provistos por los docentes de la asignatura, se procedió a diseñar una solución sin automatizar en el software Tecnomatix. Esta simulación, incorpora varios elementos de la planta pre-automatización, y emula una planta de 20 x 10 m con una operación manual. A continuación se muestra un vídeo con el funcionamiento de la planta en la simulación.
+                <h2 class="fw-bolder">Planta sin automatizar</h2>
+                <p class="fs-5 mb-4">  Como resultado del análisis del documento base y de los datos provistos por los docentes de la asignatura, se procedió a diseñar una solución sin automatizar. Esta solución, incorpora varios elementos de la planta pre-automatización, y emula una planta de 20 x 10 m con una operación manual. En ella se definen dos etapas claves para un proceso de Logistica 4.0, la etapa de almacenamiento y la etapa de recoleccción. Cada etapa se realiza de forma manual en esta solución, con personas llevando las cajas al almacén, de la misma forma se realiza su retiro, y se imprime una etiqueta para cada una de las cajas que se pega en su costado, para posteriormente posicionarlas en un pallet y enviar a su destino.</p>
+                
+                <h3 class="fw-bolder">Simulación de la planta sin automatizar</h3>
+                <p class="fs-5 mb-4"> Es así que se construye esta planta sin automatizar en el software Tecnomatix. A continuación se muestra un vídeo con el funcionamiento de la planta en la simulación.
                 </p>
             </section>
 
@@ -25,17 +29,26 @@ layout: default
             </video> 
             </div>
             <section class="mb-5">
-                <p class="fs-5 mb-4">  Así, con esta planta simulada, se obtienen los indicadores que corresponden a la situación sin automatizar. De la misma manera, se calculan los KPI de importancia con estos indicadores, y se realiza igualmente el cálculo del OEE. Se muestran a continuación los resultados correspondientes:
+                <p class="fs-5 mb-4">  Así, con esta planta simulada, se obtienen los indicadores que corresponden a la situación sin automatizar, extraídos directamente de la simulación. Esto nos da unas nociones sobre las capacidades de producción, la disponibilidad de la planta, los tiempos de producción, las fallas en cada una de las estaciones. Estos resultados se muestran a continuación:
                 </p>
             </section>
             <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/Indicadores1.png" alt="..." /></div>
             
             <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/Indicadores2.png" alt="..." /></div>
             <section class="mb-5">
+                <p class="fs-5 mb-4"> Y usando estos mismos datos obtenidos en la automatización, se hace un resumen de los KPI's importantes, y se realiza el cálculo del OEE, estos resultados se muestran en la siguiente tabla.
+                </p>
+            </section>
+            <section class="mb-5">
                 <p class="fs-5 mb-4"> Finalmente, se muestra el VSM que resume de buena manera, la operación de la planta sin automatizar, así como los indicadores importantes para la producción y los tiempos. 
                 </p>
             </section>
-            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/Indicadores2.png" alt="..." /></div>
+            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/VSM_SinAuto.PNG" alt="..." /></div>
+            <h2 class="fw-bolder">Planta automatizada</h2>
+            <h3 class="fw-bolder">Modificaciones en las estaciones</h3>
+            <p class="fs-5 mb-4"> Analizando los distintos cuellos de botella en la solución sin automatizar. Como se pudo ver, tenemos dos etapas y cada etapa tiene asociada procesos para completarse, en la etapa de almacenamiento se comienza con la respectiva recolección de la caja, un proceso de sorting por medio de bandas transportadoras, para su posterior almacenamiento en la banda, por medio de un robot Gantry. Posteriormente, ya con las cajas en el almacén, el mismo robot Gantry hace el proceso de retiro de la caja del almacén, dejando la caja en una banda para su posterior identificación mediante la impresión de una etiqueta de papel sobre cada caja con un código propio que indica el pedido correspondiente y el tipo de caja. Finalmente, estas cajas se llevan a una celda de paletizado, donde se realiza su respectiva ubicación por medio de un robot de  ejes. Veamos pues ahora, algunas consideraciones a tener en cuenta en cada una de estas etapas.  </p>
+            <p class="fs-5 mb-4">Fabián meta aqui la info </p>
+
         </div>
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-6">
