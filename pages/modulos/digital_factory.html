@@ -3,30 +3,35 @@ layout: default
 ---
 <!-- Page Content-->
 <section class="py-5">
+    <h1 class="fw-bolder text-center">Digital Factory</h1>
     <div class="container px-5 my-5">
-        <div class="row gx-5 justify-content-center">
-            <div class="col-lg-6">
-                <div class="text-center mb-5">
-                    <h1 class="fw-bolder">Digital Factory</h1>
-                    <p class="lead fw-normal text-muted mb-0">Lorewq ipsum dolor sit amet consectetur adipisicing elit. Ab similique, ducimus ut alias sit accusamus illum, asperiores deserunt dolorum quaerat qui! Ab, quisquam explicabo magni dolores unde beatae quam a.</p>
-                </div>
-            </div>
+        <div class="mb-5">
+            <p class="fs-5 mb-4">Para este proyecto se usó el software Siemens NX para la simulación de una fábrica digital 
+                de esta forma se modelo todo el diseño generado por el equipo de trabajo y se realizaron las configuraciones  
+                respectivas de cuerpos rígidos, de colisión, sensores, adaptadores de señal, transformadores de objetos, 
+                fuentes y sumideros de objetos y en general toda la configuración para la recepción adecuada de señales y 
+                la simulación del proceso según las órdenes recibidas por un emulador del controlador industrial.
+            </p>
+            <p class="fs-5 mb-4">El proyecto se divide en dos módulos, el primer módulo es el de almacenamiento el cual esta 
+                compuesto por una banda transportadora, dos sensores ópticos y el gantry, esta etapa se encarga de cargar las 
+                cajas a la bodega para mantener el almacén por encima del 30% durante toda la jornada de trabajo, esta etapa 
+                tiene accionamiento manual por medio del SCADA y desde allí se puede monitorear todo el proceso de alimentación 
+                de la bodega junto con el estado actual de cada tipo de cajas y su historial de uso.
+            </p>
         </div>
-        <div class="row gx-5">
-            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/1300x700/343a40/6c757d" alt="..." /></div>
-            <div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
-            <div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
+        <div class="col-12">
+            <iframe src="https://drive.google.com/file/d/1cvE5nG2BEtBYSAk8lz88tQC2rKVm7DCs/preview" width="1000" height="680" allow="autoplay"></iframe>
         </div>
-        <div class="row gx-5 justify-content-center">
-            <div class="col-lg-6">
-                <div class="text-center mb-5">
-                    <p class="lead fw-normal text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt architecto enim eos accusantium fugit recusandae illo iste dignissimos possimus facere ducimus odit voluptatibus exercitationem, ex laudantium illum voluptatum corporis.</p>
-                    <a class="text-decoration-none" href="#!">
-                        View project
-                        <i class="bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
+        <p class="fs-5 mb-4">El segundo módulo es el de distribución y en este encontramos tres etapas principales, 
+            la primera es la etapa de selección la cual es ejecutada por el Gantry, en esta etapa se recibe la orden a 
+            despachar y se genera la rutina de movimiento adecuada para que el gantry tome la caja respectiva y la cargue 
+            en la banda, posteriormente la banda se activa cuando el controlador recibe la señal de entrada del sensor y 
+            comienza a desplazarse la caja hasta la sección de etiquetado que se realiza en movimiento continuo de la banda, 
+            por ultimo la caja llega al final de la banda donde es detectada por un sensor que al enviar la señal se genera 
+            la orden para detener la banda y habilitar la rutina respectiva del robot para realizar la etapa de paletizado.
+        </p>
+        <div class="col-lg-12">
+            <iframe src="https://drive.google.com/file/d/1cwFcb_tL1L9kcW7hvlcIQYWq_uo3KS0F/preview" width="1000" height="680" allow="autoplay"></iframe>
         </div>
     </div>
 </section>

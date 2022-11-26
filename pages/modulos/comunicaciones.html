@@ -3,23 +3,23 @@ layout: default
 ---
 <!-- Page Content-->
 <section class="py-5">
+    <h1 class="fw-bolder text-center">Comunicaciones</h1>
     <div class="container px-5 my-5">
-        <div class="row gx-5 justify-content-center">
-            <div class="col-lg-6">
-                <div class="text-center mb-5">
-                    <h1 class="fw-bolder">Comunicaciones</h1>
-                    <p class="lead fw-normal text-muted mb-0">Para esta aplicación se planteó el siguiente diagrama de comunicaciones en el cual se incluyen los puertos y protocolos de comunicación de cada nivel</p>
-                </div>
-            </div>
+        <div class="mb-5">
+            <p class="fs-5 mb-4">Para esta aplicación se planteó el siguiente diagrama de comunicaciones en el cual 
+                se incluyen los puertos y protocolos de comunicación de cada nivel</p>
         </div>
         <div class="row gx-5">
             <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="https://lucid.app/publicSegments/view/b907fe74-03de-4252-93e2-a68f8f3e9c31/image.png" alt="..." /></div>
         </div>
-        <div class="row gx-5 justify-content-center">
-            <div class="col-lg-6">
-                <div class="text-center mb-5">
-                    <p class="lead fw-normal text-muted">Principalmente vemos que las comunicaciones internas a la planta se realizan por protocolos tipo OPC en cambio las comunicaciones externas que están consumiendo datos de la nube se enlazan por puertos TCP tales como el 8088 el cual es el puerto principal de Iginition y los puertos 1833 y 8090 que son los puertos TCP del protocolo MQTT y el puerto del Web Socket de MQTT respectivamente.</p>
-                </div>
+        <div class="mb-5">
+            <div class="mb-5">
+                <p class="fs-5 mb-4">Principalmente vemos que las comunicaciones internas a la planta se realizan por 
+                    protocolos tipo OPC, para la conexión hacia el PLC se usa OPC DA para enlazar RSLinx con Iginition y para las conexiones 
+                    hacia la fabrica digital que esta compuesta por Robot Studio y Siemens NX se usa OPC UA, esto para los dos primero niveles 
+                    de automatizacion, para los niveles superiores de supervision y operacion se usan se enlazan por puertos TCP tales como el 
+                    8088 el cual es el puerto principal de Iginition y los puertos 1833 y 8090 que son los puertos TCP del protocolo MQTT y el 
+                    puerto del Web Socket de MQTT respectivamente.</p>
             </div>
         </div>
     </div>
