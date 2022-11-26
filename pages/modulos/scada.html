@@ -3,26 +3,65 @@ layout: default
 ---
 <!-- Page Content-->
 <section class="py-5">
+    <h1 class="fw-bolder text-center">SCADA</h1>
     <div class="container px-5 my-5">
-        <div class="row gx-5 justify-content-center">
-            <div class="col-lg-6">
-                <div class="text-center mb-5">
-                    <h1 class="fw-bolder">SCADA</h1>
-                    <p class="lead fw-normal text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab similique, ducimus ut alias sit accusamus illum, asperiores deserunt dolorum quaerat qui! Ab, quisquam explicabo magni dolores unde beatae quam a.</p>
-                </div>
+        <div class="mb-5">
+            <p class="fs-5 mb-4">Para este proyecto se usó el software Ignition Gateway para la creación del sistema tipo SCADA, esta elección se 
+                realiza con base a la arquitectura planeada para el módulo Industria 4.0 y Comunicaciones ya que al ver que Ignition 
+                puede cumplir las funciones de Servidor MQTT y de Servidor SCADA nos parece adecuado tener todo centralizado en un 
+                mismo servicio.
+            </p>
+            <p class="fs-5 mb-4">El proyecto se divide en dos módulos, el primer módulo es el de almacenamiento el cual esta 
+                compuesto por una banda transportadora, dos sensores ópticos y el gantry, esta etapa se encarga de cargar las 
+                cajas a la bodega para mantener el almacén por encima del 30% durante toda la jornada de trabajo, esta etapa 
+                tiene accionamiento manual por medio del SCADA y desde allí se puede monitorear todo el proceso de alimentación 
+                de la bodega junto con el estado actual de cada tipo de cajas y su historial de uso.
+            </p>
+            <p class="fs-5 mb-4">
+                Así vamos a tener un SCADA alojado en la nube con 4 vistas principales, en la primera encontraremos la vista general del 
+                estado de planta, en esta podremos dar la autorización para comenzar la operación del sistema y ver cuando este reciba 
+                la orden y nos habilite el modo AUTO.
+            </p>
+            <div class="row gx-5">
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/Scada_gen.png" alt="..." /></div>
+            </div>
+            <p class="fs-5 mb-4">
+                Continuando con el recorrido en nuestro SCADA se puede ver el modulo de almacenamiento, este modulo cuenta con la 
+                visualización de sensores, estado de banda y cantidad de cajas por tipo junto con su histórico de consumo.
+            </p>
+            <div class="row gx-5">
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/scada_feed.png" alt="..." /></div>
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/scada_hist.png" alt="..." /></div>
+            </div>
+            <p class="fs-5 mb-4">
+                En la siguiente vista podremos ver el estado de los sensores la banda y el robot del módulo de distribución adicionalmente 
+                tenemos el selector de casos que nos permite indicar que caso de prueba vamos a ejecutar y posteriormente dar clic al botón 
+                que habilita el inicio de la operación.
+            </p>
+            <div class="row gx-5">
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/scada_pallet.png" alt="..." /></div>
+            </div>
+            <p class="fs-5 mb-4">
+                Por último, tenemos nuestra vista de alarmas en estas podremos ver cuando es necesario llenar el almacén nuevamente ya que 
+                si algún tipo de caja baja a menos del 30% se dispara la alarma para que el operario comience el ciclo de llenado de caja 
+                antes de iniciar el siguiente ciclo.
+            </p>
+            <div class="row gx-5">
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/scada_alarms.png" alt="..." /></div>
+            </div>
+            <p class="fs-5 mb-4">
+                A continuación se puede apreciar todo el sistema SCADA funcionando en paralelo a la Fabrica Digital.
+            </p>
+            <div class="fs-5 mb-4 text-center">
+                <iframe class="col-12" src="https://drive.google.com/file/d/1cyli7z-o4hi7c2czjnYc_YuuroHO9C8Y/preview" height="600" allow="autoplay"></iframe>
             </div>
         </div>
-        <div class="row gx-5">
-            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/1300x700/343a40/6c757d" alt="..." /></div>
-            <div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
-            <div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
-        </div>
+        
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-6">
                 <div class="text-center mb-5">
-                    <p class="lead fw-normal text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt architecto enim eos accusantium fugit recusandae illo iste dignissimos possimus facere ducimus odit voluptatibus exercitationem, ex laudantium illum voluptatum corporis.</p>
-                    <a class="text-decoration-none" href="#!">
-                        View project
+                    <a class="text-decoration-none" href="http://iginition-comp-a-s.westus.azurecontainer.io:8088/data/perspective/client/SCADA_APM/" target="_blank">
+                        Ver SCADA 
                         <i class="bi-arrow-right"></i>
                     </a>
                 </div>
