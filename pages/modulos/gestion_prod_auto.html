@@ -12,7 +12,7 @@ layout: default
                 </div>
             </div>
         </div>
-        <div class="row gx-5">
+        <div class="row gx-5 justify-content-center">
             <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/ProductionManagement1.jpg" alt="..." /></div>
             <section class="mb-5">
                 <h2 class="fw-bolder">Planta sin automatizar</h2>
@@ -39,21 +39,31 @@ layout: default
                 <p class="fs-5 mb-4"> Observando estos indicadores pueden detallar algunos de los problemas de la planta, que la solución de automatización propuesta debe intentar resolver. En primer lugar, los tiempos de espera de cada una de las estaciones de trabajo, son muy elevados, lo que afecta el rendimiento de la planta, y por la tanto los KPI’s. De igual manera, la estación de retiro tiene un porcentaje alto de bloqueo, debido a bien sea la falta de cajas, o fallas en el proceso. Y en cuanto a fallas, el proceso de identificación que es totalmente manual, presenta un porcentaje bastante alto de falla. Todas estas consideraciones, son importantes, y se tuvieron en cuenta en el momento de formular la propuesta de automatización. Y usando estos mismos datos obtenidos en la automatización, se hace un resumen de los KPI's importantes, y se realiza el cálculo del OEE, estos resultados se muestran en la siguiente tabla.
                 </p>
             </section>
+            <section class="mb-5">
             <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{site.baseurl}}/images/OEE_SinAuto.png" alt="..." /></div>
                 <p class="fs-5 mb-4"> Finalmente, se muestra el VSM que resume de buena manera, la operación de la planta sin automatizar, así como los indicadores importantes para la producción y los tiempos. 
                 </p>
             </section>
+            <section class="mb-5">
             <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/VSM_SinAuto.png" alt="..." /></div>
             <h2 class="fw-bolder">Planta automatizada</h2>
             <h3 class="fw-bolder">Modificaciones en las estaciones</h3>
             <p class="fs-5 mb-4"> Analizando los distintos cuellos de botella en la solución sin automatizar. Como se pudo ver, tenemos dos etapas y cada etapa tiene asociada procesos para completarse, en la etapa de almacenamiento se comienza con la respectiva recolección de la caja, un proceso de sorting por medio de bandas transportadoras, para su posterior almacenamiento en la banda, por medio de un robot Gantry. Posteriormente, ya con las cajas en el almacén, el mismo robot Gantry hace el proceso de retiro de la caja del almacén, dejando la caja en una banda para su posterior identificación mediante la impresión de una etiqueta de papel sobre cada caja con un código propio que indica el pedido correspondiente y el tipo de caja. Finalmente, estas cajas se llevan a una celda de paletizado, donde se realiza su respectiva ubicación por medio de un robot de  ejes. Veamos pues ahora, algunas consideraciones a tener en cuenta en cada una de estas etapas.  </p>
+        </section>
+        <section class="mb-5">
             <p class="fs-5 mb-4">Fabián meta aqui la info </p>
-
+        </section>
+        <section class="mb-5">
+            <p class="fs-5 mb-4"> Con estas consideraciones de automatización, se volvió a simular la planta, y se obtuvieron nuevamente, los indicadores. En la siguiente tabla, se resumen aquellos más importantes de manera similar a como se realizó en la planta sin automatizar. </p>
+            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{site.baseurl}}/images/OEE_Auto.png" alt="..." /></div>
+            <p class="fs-5 mb-4"> Y de la misma manera, se volvió a plantear el Value Stream Mapping correspondiente a la planta automatizada. </p>
+            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/VSM_Auto.png" alt="..." /></div>
+        </section>
         </div>
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-6">
                 <div class="text-center mb-5">
-                    <p class="lead fw-normal text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt architecto enim eos accusantium fugit recusandae illo iste dignissimos possimus facere ducimus odit voluptatibus exercitationem, ex laudantium illum voluptatum corporis.</p>
+                    <p class="lead fw-normal text-muted">Con esta propuesta de automatización explicada en este módulo, y como se gestionaron los procesos, le invitamos a continaur recorriendo la página.</p>
                     <a class="text-decoration-none" href="#!">
                         View project
                         <i class="bi-arrow-right"></i>
@@ -61,7 +71,5 @@ layout: default
                 </div>
             </div>
         </div>
-    </div>
-</section>
     </div>
 </section>
