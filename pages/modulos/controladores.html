@@ -8,19 +8,24 @@ layout: default
             <div class="col-lg-6">
                 <div class="text-center mb-5">
                     <h1 class="fw-bolder">Controladores Industriales</h1>
-                    <p class="lead fw-normal text-muted mb-0">En este modulo se propone una solución con un controlador industrial, donde se programa por medio de implementación de lógica programada Ladder en forma de Grafcet. Se presentan la descripción funcional, la descripción tecnológica, y la programación lógica de control. Finalmente se presenta un video mostrando el funcionamiento del programa. También se realiza una descripción global de cómo se programaría el controlador del Gantry seleccionado y la consideración que se debe tener.  </p>
+                    <p class="lead fw-normal text-muted mb-0">En este modulo se propone una solución con un controlador industrial, donde se programa por medio de implementación de lógica programada Ladder en forma de Grafcet. Se presentan la descripción funcional, la descripción tecnológica, y la programación lógica de control. Finalmente se presenta un video mostrando el funcionamiento del programa. También se realiza una descripción global de cómo se programaría el controlador del Gantry seleccionado y la consideración que se debe tener.   </p>
                 </div>
             </div>
         </div>
         <section class="mb-5">
-            <p class="fs-5 mb-4">  Como resultado del análisis del documento base y de los datos provistos por los docentes de la asignatura, se procedió a diseñar una solución sin automatizar en el software Tecnomatix. Esta simulación, incorpora varios elementos de la planta pre-automatización, y emula una planta de 20 x 10 m con una operación manual. A continuación se muestra un vídeo con el funcionamiento de la planta en la simulación.
-            </p>
+            <h3 class="fw-bolder">Descripción funcional y tecnológica </h3>
+            <p class="fs-5 mb-4">Se definen dos grandes etapas en la solución propuesta, la primera es la etapa de almacenamiento, esta estaba consiste en colocar cajas en la banda de suministro, y un Gantry las almacena y organiza dentro del mismo, esta etapa se realizará al comienzo de la jornada laboral para comenzar con el almacén lleno, la etapa de almacenamiento también se ejecutará cuando la cantidad tipo de cajas baja a menos del 30%.  </p>
+            <p class="fs-5 mb-4">La segunda etapa es la etapa de distribución, la cual consiste activar el Gantry para que lleve las cajas de las órdenes de los clientes a la banda de suministro, la banda se enciende para llevar a la caja a la etapa de etiquetado y de paletizado.  </p>
+            <p class="fs-5 mb-4">Se presenta entonces el Grafcet de nivel 1, en el cual se realiza una descripción funcional del proceso. En esta imagen se observa el Grafcet nivel 1 de la etapa de almacenamiento. Para ingresar a la etapa 0 se debe pulsar Start Físico o con una señal de Start desde el SCADA. A la etapa 1 ingresa cuando se le manda la señal de que comience etapas de almacenamiento, señal que le llega desde el SCADA, el realiza una comunicación con el Gantry para decir el tipo de caja que va a almacenar. En la etapa 2 se espera a que el operario ponga la caja en la banda, de tal forma que son en sensor óptico al comienzo de la banda detecte la caja y encienda la banda de suministro en la etapa 3. Cuando llega al final de la banda se activa un sensor que activa la etapa 4, la banda se desactiva y se le envía señal al Gantry de que tiene que realizar el movimiento de almacenar caja en la etapa 5. Al mismo tiempo se vuelve a la etapa 2 para esperar una nueva caja. Cuando el Gantry termina de dejar la caja en el almacén se desactiva el Gantry en la etapa 6. Si el almacén esta lleno sale de las etapas de almacenamiento y apaga el Gantry (etapa 7), donde va a esperar la señal de distribución por medio del SCADA; de lo contrario se dirige a la etapa 2 para esperar una caja, y realizar todo el ciclo hasta que llene el almacén.   </p>
+            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/GRAFCET_LEVEL1_P1.jpg" alt="..." /></div>
+            <p class="fs-5 mb-4">A continuación, se muestra en la descripción tecnología de las etapas de distribución por medio del Grafcet de nivel 2.   </p>
+            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/GRAFCET_LEVEL2_P1.jpg" alt="..." /></div>
+            <h3 class="fw-bolder">Almacén</h3>
+            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/GRAFCET_LEVEL1_P2.jpg" alt="..." /></div>
+            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/GRAFCET_LEVEL2_P2.jpg" alt="..." /></div>
+            
         </section>
-        <div class="row gx-5">
-            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/1300x700/343a40/6c757d" alt="..." /></div>
-            <div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
-            <div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
-        </div>
+        
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-6">
                 <div class="text-center mb-5">
