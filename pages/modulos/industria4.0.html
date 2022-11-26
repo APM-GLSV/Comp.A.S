@@ -21,7 +21,7 @@ layout: default
                         <!-- Post title-->
                         <h1 class="fw-bolder mb-1">Arquitectura de Red</h1>
                         <!-- Post meta content-->
-                        <div class="text-muted fst-italic mb-2">Noviembre 18, 2022</div>
+                        <div class="text-muted fst-italic mb-2">Noviembre 25, 2022</div>
                         <!-- Post categories-->
                         <a class="badge bg-secondary text-decoration-none link-light" href="#!">IoT</a>
                         <a class="badge bg-secondary text-decoration-none link-light" href="#!">Ignition</a>
@@ -31,11 +31,20 @@ layout: default
                     <figure class="mb-4"><img class="img-fluid rounded" src="https://lucid.app/publicSegments/view/0ac65b9e-3480-4a5a-bbfa-17a2713a8065/image.png" alt="..." /></figure>
                     <!-- Post content-->
                     <section class="mb-5">
-                        <p class="fs-5 mb-4">Para este proyecto se hizo uso de Ignition como fuente principal de consumo de datos, por lo cual se creo y configuró un servicio de Ignition Local que obtiene las etiquetas de control y las envía al gemelo digital tanto en NX como en RobotStudio. De esta forma se asegura un canal de comunicación continuo y único.</p>
-                        <p class="fs-5 mb-4">En el servicio de Ignition Local se configuro el módulo MQTT Transmission proporcionado por Cirrus Link Solutions para permitir la comunicación al Ignition Nube que está alojado en Azure por medio de una instancia de contenedor que tiene configurada la persistencia de datos en un storage account.</p>
-                        <p class="fs-5 mb-4">Adicionalmente Ignition Nube tiene configurado los módulos MQTT Engine que permite interactuar con los tags publicada y MQTT Distributor el cual genera un servidor MQTT en Ignition para la administración y comunicación de la información.</p>
+                        <p class="fs-5 mb-4">Para este proyecto se hizo uso de Ignition como fuente principal de publicación de datos,
+                             por lo cual se creo y configuró un servicio de Ignition Local que obtiene las etiquetas de control y 
+                             las envía al gemelo digital tanto en NX como en RobotStudio. De esta forma se asegura un canal de comunicación 
+                             continuo y único.</p>
+                        <p class="fs-5 mb-4">En el servicio de Ignition Local se configuro el módulo MQTT Transmission proporcionado por 
+                            Cirrus Link Solutions para permitir la comunicación al Ignition Nube que está alojado en Azure por medio de una 
+                            instancia de contenedor que tiene configurada la persistencia de datos en un Azure Storage Account.</p>
+                        <p class="fs-5 mb-4">Adicionalmente Ignition Nube tiene configurado los módulos MQTT Engine que permite interactuar con los 
+                            tags publicada y MQTT Distributor el cual genera un servidor MQTT en Ignition para la administración y comunicación de 
+                            la información.</p>
                         <h2 class="fw-bolder mb-4 mt-5">Ignition Nube</h2>
-                        <p class="fs-5 mb-4">La arquitectura de Ignition Nube se basa en el esquema de contenedores por lo cual se tomó como imagen base la versión 8.1.22 de Ignition y en este se configuraron 3 volúmenes de persistencia de datos, los volúmenes configurados fueron: </p>
+                        <p class="fs-5 mb-4">La arquitectura de Ignition Nube se basa en el esquema de contenedores por lo cual se tomó como 
+                            imagen base la versión 8.1.22 de Ignition y en este se configuraron 3 volúmenes de persistencia de datos, los volúmenes 
+                            configurados fueron: </p>
                         <ul>
                             <li>Data: el cual permite la persistencia de casi el 90% de las configuraciones y datos almacenados en Ignition</li>
                             <li>Modules: el cual permite la persistencia e instalación automática de los módulos de terceros</li>
