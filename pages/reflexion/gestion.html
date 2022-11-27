@@ -1,30 +1,67 @@
 ---
 layout: default
 ---
-<!-- Page Content-->
-<section class="py-5">
-    <div class="container px-5 my-5">
-        <div class="row gx-5 justify-content-center">
-            <div class="col-lg-6">
-                <div class="text-center mb-5">
-                    <h1 class="fw-bolder">Gestión del Proyecto</h1>
-                    <p class="lead fw-normal text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab similique, ducimus ut alias sit accusamus illum, asperiores deserunt dolorum quaerat qui! Ab, quisquam explicabo magni dolores unde beatae quam a.</p>
+<!-- Header-->
+<header class="py-5">
+    <div class="container px-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xxl-6">
+                <div class="text-center my-5">
+                    <h1 class="fw-bolder mb-3">Gestión del proyecto</h1>
+                    <p class="lead fw-normal text-muted mb-4">En esta sección cada uno de los integrantes hace un comentario sobre la dinámica de las reuniones, manejo de tiempos y recursos,discusiones y
+                    verificación de avance de proyecto, interacción con el docente facilitador.
+                        </p>
+                    <a class="btn btn-primary btn-lg" href="#scroll-target">Integrantes</a>
                 </div>
             </div>
         </div>
-        <div class="row gx-5">
-            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/1300x700/343a40/6c757d" alt="..." /></div>
-            <div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
-            <div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
+    </div>
+</header>
+<!-- Team members section-->
+<section class="py-5 bg-light">
+    <div class="container px-5 my-5" id="scroll-target">
+        <div class="text-center">
+            <h2 class="fw-bolder">Equipo de Trabajo</h2>
+            <p></p>
         </div>
-        <div class="row gx-5 justify-content-center">
-            <div class="col-lg-6">
-                <div class="text-center mb-5">
-                    <p class="lead fw-normal text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt architecto enim eos accusantium fugit recusandae illo iste dignissimos possimus facere ducimus odit voluptatibus exercitationem, ex laudantium illum voluptatum corporis.</p>
-                    <a class="text-decoration-none" href="#!">
-                        View project
-                        <i class="bi-arrow-right"></i>
-                    </a>
+        <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5 mb-5 mb-xl-0">
+                <div class="text-center">
+                    <img class="img-fluid rounded-circle mb-4 px-4" src="{{ site.baseurl }}/images/fotos/fabian.jpg" width="500" alt="..." />
+                    <h5 class="fw-bolder">Fabian Galindo</h5>
+                    <div class="fst-italic text-muted">CTO</div>
+                    <p>El grupo se organizó desde el comienzo para llevar a cabo la realización del proyecto de forma cronológica. Semanalmente se tenía una reunión en conjunto para revisar avances y asignar tareas, aquí se compartían las dudas ideas dificultades y se tomaba nota de lo hablado y lo pendiente en cada reunión. Los tiempos del proyecto fueron los adecuados con lo que se iba viendo en clase y los temas tratados permitieron avanzar con el proyecto de forma fluida. Las constantes preguntas hacia los docentes y la retroalimentación de los mismos permitió progresar en ciertas etapas del proyecto. 
+                    </p>
+                </div>
+            </div>
+            <div class="col mb-5 mb-5 mb-xl-0">
+                <div class="text-center">
+                    <img class="img-fluid rounded-circle mb-4 px-4" src="{{ site.baseurl }}/images/fotos/nicolas.jpg" width="500" alt="..." />
+                    <h5 class="fw-bolder">Nicolás López</h5>
+                    <div class="fst-italic text-muted">CCO</div>
+                    <p>Me pareció que como grupo tuvimos una gran gestión del proyecto, ya que contamos con una buena planeación del mismo desde el comienzo, tuvimos reuniones periódicas cada semana y llevábamos un acta de cada una de ellas. Por parte de los docentes recibimos buena retroalimentación respecto al mismo y en general logramos llevar a cabo un buen proyecto, cumpliendo con las metas establecidas.
+
+                    </p>
+                </div>
+            </div>
+            <div class="col mb-5 mb-5 mb-sm-0">
+                <div class="text-center">
+                    <img class="img-fluid rounded-circle mb-4 px-4" src="{{ site.baseurl }}/images/fotos/william.jpg" width="500" alt="..." />
+                    <h5 class="fw-bolder">William Sierra</h5>
+                    <div class="fst-italic text-muted">CIO</div>
+                    <p>
+                        Desde el principio se planteó un esquema de reuniones semanales para revisión de avance y asignación de tareas, estas reuniones fueron fundamentales para el éxito del proyecto, en estos espacios se socializan los avances y se realizaba la revisión de pendientes y la retroalimentación de parte de todo el equipo, hubo algunos contratiempos con temas de instalación y configuración de software que fueron solventados sin mayor impacto al proyecto. En general la interacción con los docentes fue importante para la resolución de dudas y la primera entrega ayudó a alinear el curso del proyecto.
+                    </p>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="text-center">
+                    <img class="img-fluid rounded-circle mb-4 px-4" src="{{ site.baseurl }}/images/fotos/brian.jpg" width="500" alt="..." />
+                    <h5 class="fw-bolder">Brian Vasquez</h5>
+                    <div class="fst-italic text-muted">CEO</div>
+                    <p>
+                        Manejamos reuniones semanales, y aunque a veces se presentan contratiempos, intentamos siempre cumplir con ellas. En general, creo que la dedicación en tiempos del proyecto fue adecuada, y la comunicación con los docentes fue correcta. La verificación de avance intermedio fue importante para el grupo, y ayudó a mejorar el rumbo. En cuanto a recursos, alguna dificultad con equipos de cómputo hizo que el uso de recursos no fuera el mejor, pero se pudo solventar.
+                    </p>
                 </div>
             </div>
         </div>

@@ -1,30 +1,66 @@
 ---
 layout: default
 ---
-<!-- Page Content-->
-<section class="py-5">
-    <div class="container px-5 my-5">
-        <div class="row gx-5 justify-content-center">
-            <div class="col-lg-6">
-                <div class="text-center mb-5">
-                    <h1 class="fw-bolder">Recomendaciones</h1>
-                    <p class="lead fw-normal text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab similique, ducimus ut alias sit accusamus illum, asperiores deserunt dolorum quaerat qui! Ab, quisquam explicabo magni dolores unde beatae quam a.</p>
+<!-- Header-->
+<header class="py-5">
+    <div class="container px-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xxl-6">
+                <div class="text-center my-5">
+                    <h1 class="fw-bolder mb-3">Recomendaciones</h1>
+                    <p class="lead fw-normal text-muted mb-4">En esta sección cada uno de los integrantes hace una recomendación sobre el proyecto y la asignatura en la general. 
+                        </p>
+                    <a class="btn btn-primary btn-lg" href="#scroll-target">Integrantes</a>
                 </div>
             </div>
         </div>
-        <div class="row gx-5">
-            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/1300x700/343a40/6c757d" alt="..." /></div>
-            <div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
-            <div class="col-lg-6"><img class="img-fluid rounded-3 mb-5" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
+    </div>
+</header>
+<!-- Team members section-->
+<section class="py-5 bg-light">
+    <div class="container px-5 my-5" id="scroll-target">
+        <div class="text-center">
+            <h2 class="fw-bolder">Equipo de Trabajo</h2>
+            <p></p>
         </div>
-        <div class="row gx-5 justify-content-center">
-            <div class="col-lg-6">
-                <div class="text-center mb-5">
-                    <p class="lead fw-normal text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt architecto enim eos accusantium fugit recusandae illo iste dignissimos possimus facere ducimus odit voluptatibus exercitationem, ex laudantium illum voluptatum corporis.</p>
-                    <a class="text-decoration-none" href="#!">
-                        View project
-                        <i class="bi-arrow-right"></i>
-                    </a>
+        <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5 mb-5 mb-xl-0">
+                <div class="text-center">
+                    <img class="img-fluid rounded-circle mb-4 px-4" src="{{ site.baseurl }}/images/fotos/fabian.jpg" width="500" alt="..." />
+                    <h5 class="fw-bolder">Fabian Galindo</h5>
+                    <div class="fst-italic text-muted">CTO</div>
+                    <p>Me parece que la metodología del proyecto fue buena, enfoca muchas temáticas que se van desarrollando durante el curso, y los tiempos fueron los correctos en el desarrollo de cada módulo, sin embarga al estar el proyecto tan abierto surgen muchas dudas que se aclararon ya avanzado el proyecto, tal vez al ser tan abierto no permite realizar un enfoque preciso desde el principio. 
+
+                    </p>
+                </div>
+            </div>
+            <div class="col mb-5 mb-5 mb-xl-0">
+                <div class="text-center">
+                    <img class="img-fluid rounded-circle mb-4 px-4" src="{{ site.baseurl }}/images/fotos/nicolas.jpg" width="500" alt="..." />
+                    <h5 class="fw-bolder">Nicolás López</h5>
+                    <div class="fst-italic text-muted">CCO</div>
+                    <p>No tengo mayores observaciones con respecto al método de desarrollo de la clase ya que en mi opinión fue muy completa y se lograron los objetivos propuestos. Sin embargo en momentos me pareció que quedábamos un poco colgados con respecto a los tiempos en los que las instrucciones se nos iban dando para el desarrollo del proyecto, y me hubiera parecido muy interesante haber trabajado con otros grupos interdisciplinarios durante el desarrollo del mismo.
+                    </p>
+                </div>
+            </div>
+            <div class="col mb-5 mb-5 mb-sm-0">
+                <div class="text-center">
+                    <img class="img-fluid rounded-circle mb-4 px-4" src="{{ site.baseurl }}/images/fotos/william.jpg" width="500" alt="..." />
+                    <h5 class="fw-bolder">William Sierra</h5>
+                    <div class="fst-italic text-muted">CIO</div>
+                    <p>
+                        Mi principal recomendación va enfocada a la entrega de lineamientos del proyecto ya que la primera vez que se mencionaron fue algo básico y no se alcanzó a dimensionar adecuadamente desde el principio el alcance del proyecto, por lo que en varias ocasiones hubo sesiones de dudas para verificar el enfoque del proyecto, adicionalmente hubo material que se entregó tarde y cambios en los lineamientos dados a pocas semanas del cierre del proyecto que hubiera sido bueno conocer con más tiempo
+                    </p>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="text-center">
+                    <img class="img-fluid rounded-circle mb-4 px-4" src="{{ site.baseurl }}/images/fotos/brian.jpg" width="500" alt="..." />
+                    <h5 class="fw-bolder">Brian Vasquez</h5>
+                    <div class="fst-italic text-muted">CEO</div>
+                    <p>
+                        La metodología de la clase me pareció correcta, sin embargo considero que la formulación inicial del proyecto, fue demasiado abierta, lo que obligó a llegar a semanas posteriores del semestre, sin tener una definición clara de varias condiciones importantes. De igual manera, la guía de entrega inicial y la final presentaron diferencias que hubiera sido bueno conocer con mayor anterioridad.
+                    </p>
                 </div>
             </div>
         </div>
