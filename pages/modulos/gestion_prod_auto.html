@@ -8,87 +8,185 @@ layout: default
             <div class="col-lg-6">
                 <div class="text-center mb-5">
                     <h1 class="fw-bolder">Gestión de la producción y automatización</h1>
-                    <p class="lead fw-normal text-muted mb-0">En este módulo se presenta la situación de la planta sin automatizar y se propone una solución de automatización con su respectivo análisis, indicadores y VSM. Finalmente, se propone la integración de esta planta con un sistema MES.</p>
+                    <p class="lead fw-normal text-muted mb-0">En este módulo se presenta la situación de la planta sin
+                        automatizar y se propone una solución de automatización con su respectivo análisis, indicadores
+                        y VSM. Finalmente, se propone la integración de esta planta con un sistema MES.</p>
                 </div>
             </div>
         </div>
         <div class="row gx-5 justify-content-center">
-            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/ProductionManagement1.jpg" alt="..." /></div>
+            <div class="col-12"><img class="img-fluid rounded-3 mb-5"
+                    src="{{ site.baseurl }}/images/ProductionManagement1.jpg" alt="..." /></div>
             <section class="mb-5">
                 <h2 class="fw-bolder">Planta sin automatizar</h2>
-                <p class="fs-5 mb-4">  Como resultado del análisis del documento base y de los datos provistos por los docentes de la asignatura, se procedió a diseñar una solución sin automatizar. Esta solución, incorpora varios elementos de la planta pre-automatización, y emula una planta de 20 x 10 m con una operación manual. En ella se definen dos etapas claves para un proceso de Logistica 4.0, la etapa de almacenamiento y la etapa de recoleccción. En la etapa de almacenamiento, se cuenta con una entrada de material, que provee de todos los tipos de cajas, y el personal de la planta va desplazando estas cajas hacia el almacén. Este proceso de almacenamiento inicialmente no está controlado, y se reabastece cada vez que se acaba algún tipo de caja. Al ingresar un pedido, que consiste en cajas de cualquier tipo un operario debe retirar cada caja del almacén y situarla en una banda transportadora. Al hacer esto, se desplazan las cajas hasta una etapa de etiquetado, donde un operario adhiere una etiqueta con información sobre el pedido a cada caja, así como información sobre ella misma. Finalmente se realiza un proceso de paletizado, en el que el operario ordena las 5 cajas que componen el pedido sobre un pallet para su posterior distribución, y así dar por finalizado el proceso.   </p>
-                
+                <p class="fs-5 mb-4"> Como resultado del análisis del documento base y de los datos provistos por los
+                    docentes de la asignatura, se procedió a diseñar una solución sin automatizar. Esta solución,
+                    incorpora varios elementos de la planta pre-automatización, y emula una planta de 20 x 10 m con una
+                    operación manual. En ella se definen dos etapas claves para un proceso de Logistica 4.0, la etapa de
+                    almacenamiento y la etapa de recoleccción. En la etapa de almacenamiento, se cuenta con una entrada
+                    de material, que provee de todos los tipos de cajas, y el personal de la planta va desplazando estas
+                    cajas hacia el almacén. Este proceso de almacenamiento inicialmente no está controlado, y se
+                    reabastece cada vez que se acaba algún tipo de caja. Al ingresar un pedido, que consiste en cajas de
+                    cualquier tipo un operario debe retirar cada caja del almacén y situarla en una banda
+                    transportadora. Al hacer esto, se desplazan las cajas hasta una etapa de etiquetado, donde un
+                    operario adhiere una etiqueta con información sobre el pedido a cada caja, así como información
+                    sobre ella misma. Finalmente se realiza un proceso de paletizado, en el que el operario ordena las 5
+                    cajas que componen el pedido sobre un pallet para su posterior distribución, y así dar por
+                    finalizado el proceso. </p>
+
                 <h3 class="fw-bolder">Simulación de la planta sin automatizar</h3>
-                <p class="fs-5 mb-4"> Es así que se construye esta planta sin automatizar en el software Tecnomatix. A continuación se muestra un vídeo con el funcionamiento de la planta en la simulación.
+                <p class="fs-5 mb-4"> Es así que se construye esta planta sin automatizar en el software Tecnomatix. A
+                    continuación se muestra un vídeo con el funcionamiento de la planta en la simulación.
                 </p>
             </section>
 
             <div class="col-12">
                 <video width="80%" height="320" controls>
-                <source src="{{ site.baseurl }}/images/VideoTecnomatix.mp4" type="video/mp4" alt="...">
-            </video> 
+                    <source src="{{ site.baseurl }}/images/VideoTecnomatix.mp4" type="video/mp4" alt="...">
+                </video>
             </div>
             <section class="mb-5">
-                <p class="fs-5 mb-4">  Así, con esta planta simulada, se obtienen los indicadores que corresponden a la situación sin automatizar, extraídos directamente de la simulación. Esto nos da unas nociones sobre las capacidades de producción, la disponibilidad de la planta, los tiempos de producción, las fallas en cada una de las estaciones. Estos resultados se muestran a continuación:
+                <p class="fs-5 mb-4"> Así, con esta planta simulada, se obtienen los indicadores que corresponden a la
+                    situación sin automatizar, extraídos directamente de la simulación. Esto nos da unas nociones sobre
+                    las capacidades de producción, la disponibilidad de la planta, los tiempos de producción, las fallas
+                    en cada una de las estaciones. Estos resultados se muestran a continuación:
                 </p>
             </section>
-            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/Indicadores1.png" alt="..." /></div>
-            
-            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/Indicadores2.png" alt="..." /></div>
+            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/Indicadores1.png"
+                    alt="..." /></div>
+
+            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/Indicadores2.png"
+                    alt="..." /></div>
             <section class="mb-5">
-                <p class="fs-5 mb-4"> Observando estos indicadores pueden detallar algunos de los problemas de la planta, que la solución de automatización propuesta debe intentar resolver. En primer lugar, los tiempos de espera de cada una de las estaciones de trabajo, son muy elevados, lo que afecta el rendimiento de la planta, y por la tanto los KPI’s. De igual manera, la estación de retiro tiene un porcentaje alto de bloqueo, debido a bien sea la falta de cajas, o fallas en el proceso. Y en cuanto a fallas, el proceso de identificación que es totalmente manual, presenta un porcentaje bastante alto de falla. Todas estas consideraciones, son importantes, y se tuvieron en cuenta en el momento de formular la propuesta de automatización. Y usando estos mismos datos obtenidos en la automatización, se hace un resumen de los KPI's importantes, y se realiza el cálculo del OEE, estos resultados se muestran en la siguiente tabla.
+                <p class="fs-5 mb-4"> Observando estos indicadores pueden detallar algunos de los problemas de la
+                    planta, que la solución de automatización propuesta debe intentar resolver. En primer lugar, los
+                    tiempos de espera de cada una de las estaciones de trabajo, son muy elevados, lo que afecta el
+                    rendimiento de la planta, y por la tanto los KPI’s. De igual manera, la estación de retiro tiene un
+                    porcentaje alto de bloqueo, debido a bien sea la falta de cajas, o fallas en el proceso. Y en cuanto
+                    a fallas, el proceso de identificación que es totalmente manual, presenta un porcentaje bastante
+                    alto de falla. Todas estas consideraciones, son importantes, y se tuvieron en cuenta en el momento
+                    de formular la propuesta de automatización. Y usando estos mismos datos obtenidos en la
+                    automatización, se hace un resumen de los KPI's importantes, y se realiza el cálculo del OEE, estos
+                    resultados se muestran en la siguiente tabla.
                 </p>
             </section>
             <section class="mb-5">
-            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{site.baseurl}}/images/OEE_SinAuto.png" alt="..." /></div>
-                <p class="fs-5 mb-4"> Finalmente, se muestra el VSM que resume de buena manera, la operación de la planta sin automatizar, así como los indicadores importantes para la producción y los tiempos. 
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{site.baseurl}}/images/OEE_SinAuto.png"
+                        alt="..." /></div>
+                <p class="fs-5 mb-4"> Finalmente, se muestra el VSM que resume de buena manera, la operación de la
+                    planta sin automatizar, así como los indicadores importantes para la producción y los tiempos.
                 </p>
             </section>
             <section class="mb-5">
-            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/VSM_SinAuto.png" alt="..." /></div>
-            <h2 class="fw-bolder">Planta automatizada</h2>
-            <h3 class="fw-bolder">Modificaciones en las estaciones</h3>
-            <p class="fs-5 mb-4"> Analizando los distintos cuellos de botella en la solución sin automatizar. Como se pudo ver, tenemos dos etapas y cada etapa tiene asociada procesos para completarse, en la etapa de almacenamiento se comienza con la respectiva recolección de la caja, un proceso de sorting por medio de bandas transportadoras, para su posterior almacenamiento en la banda, por medio de un robot Gantry. Posteriormente, ya con las cajas en el almacén, el mismo robot Gantry hace el proceso de retiro de la caja del almacén, dejando la caja en una banda para su posterior identificación mediante la impresión de una etiqueta sobre cada caja con un código propio que indica el pedido correspondiente y el tipo de caja. Finalmente, estas cajas se llevan a una celda de paletizado, donde se realiza su respectiva ubicación por medio de un robot de  ejes. Veamos pues ahora, algunas consideraciones a tener en cuenta en cada una de estas etapas.  </p>
-        </section>
-        <section class="mb-5">
-            <h3 class="fw-bolder">Gantry almacenamiento</h3>
-            <p class="fs-5 mb-4">Para la etapa de sorting se debe tener en cuenta que el almacenamiento se realiza por un tipo de caja a la vez.   </p>
-            <p class="fs-5 mb-4">Dentro del Gantry se tiene el almacenamiento de las cajas que cuentan con una basa de 6 pallets europeos, y sobre estos se organizan en 6 filas de diferentes tipos de cajas, en las 2 filas del medio se almacenan las cajas grandes para que la energía de moverlas se la menor posible; las filas de un extremo tendrán cajas medianas mientras que el otro tendrá cajas pequeñas. </p>
-            <p class="fs-5 mb-4">El almacenamiento comienza cuando se le indica al Gantry el tipo de caja que va a almacenar, además un operario debe empezar a dejar las cajas sobre la banda de alimentación la cual se encarga de desplazar las cajas a disposición del Gantry. Una vez la caja está posicionada el Gantry recoge la caja, la traslada hacia donde hace falta, y espera la nueva caja par almacenar de nuevo, esto hasta que se haya almacenado el máximo de cajas posibles.  </p>
-            <h3 class="fw-bolder">Almacén</h3>
-            <p class="fs-5 mb-4">Como se mencionó anteriormente, cada tipo de caja está en una posición especifica dentro del almacén. Las cajas grandes que están posicionadas en las filas del medio van a estar distribuidas en 12 pilas, cada pila va a tener 7 cajas para un total de 84 cajas grandes; las cajas medianas distribuidas en las filas de un extremo van a estar organizadas en 24 pilas, cada pila va a tener 7 cajas para un total de 168 cajas medianas; de forma similar las cajas pequeñas estarán distribuidas en 24 pilas, cada pila contiene 14 cajas para un total de 336 cajas pequeñas.  </p>
-            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/AlmacenCajas.jpg" alt="..." /></div>
-            <p class="fs-5 mb-4">Se tienen programadas 3 alarmas que indican cuando el almacén este a menos del 30% de su capacidad por cada tipo de caja. Con esto el operario sabe que tiene que detener la etapa de distribución, accionar el Gantry en etapa de Almacenamiento y suministrar las cajas faltantes.</p>
-            <h3 class="fw-bolder">Gantry distribución</h3>
-            <p class="fs-5 mb-4">Para la etapa de distribución el proceso debe tener almacenado una orden de cliente, una vez se tiene la orden del cliente se envía al Gantry el tipo de caja que debe llevar a la banda de etiquetado. El Gantry debe seguir una ruta especifica para evitar que se acumulen las cajas que entraron de primeras al almacén teniendo un sistema de almacenaje cercano al FIFO (First In - First Out), esta ruta se explica de mejor manera en el modulo de controladores industriales. El Gantry lleva una memoria de en cual posición hay caja, y cual es la siguiente caja que debe tomar según el tipo.  </p>
-            <h3 class="fw-bolder">Etiquetado</h3>
-            <p class="fs-5 mb-4">Para la etapa de etiquetado se siguieron el estándar de etiquetado y codificación GS1-128 que permite representar datos del producto distribuido bajo una estructura estándar y predefinida conocida como sistema de datos GS1 de uso internacional. Habilita la transmisión y captura de datos de forma ágil y eficaz. Este sistema de representación de datos se utiliza principalmente para el etiquetado de unidades de servicio destinados a entornos logísticos, tanto en la recepción como en la gestión interna y la expedición.   </p>
-            <p class="fs-5 mb-4">A partir de esto se escogió una impresora de cajas de inyección de tinta APLINK MRX 72 IMPRESORAS INKJET, Diseñada y fabricada para imprimir textos, imágenes, logos, símbolos y todo tipo de códigos de barras 100% legibles y compatibles con los estándares de GS1 (GTIN13, GTIN14, GS1-128, GS1 Datamatrix, etc.) para embalajes secundarios tales como cajas, bandejas, sacos, etc. Con una velocidad de impresión de 110m/min.   </p>
-            <p class="fs-5 mb-4">Según el estándar GS1-128 como se ve en la imagen, la etiqueta debe tener un margen de 32 mm con respecto a la base y una margen de 19 mm respeto al costado de la caja.   </p>
-            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/EstandarGS1_1.jpg" alt="..." /></div>
-            <p class="fs-5 mb-4">Por esto se define el etiquetado de la siguiente manera para una caja pequeña. Según estándar GS1-128 tiene las tres secciones de proveedor, cliente y transportista.  </p>
-            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/EstandarGS1_2.jpg" alt="..." /></div>
-            <p class="fs-5 mb-4">Una vez definido esto, la banda de etiquetado desplaza la caja desde el gantry hasta la celda robotizada, en el camino se imprime la información del cliente y el código de barras. Para esto la banda va a la velocidad de impresión 110 m/min. La impresora cuenta con un sensor de proximidad para realizar la impresión en el lugar correcto de la caja.  </p>
-            <h3 class="fw-bolder">Paletizado</h3>
-            <p class="fs-5 mb-4">Para la etapa de paletizado, aparte de lo tratado en el modulo de celda robotizada, se tiene la siguiente consideración:   </p>
-            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/MedioPallet1.jpg" alt="..." /></div>
-            <p class="fs-5 mb-4">En la imagen se puede observar el diagrama del medio pallet europeo donde se van a colocar las cajas. Para colocar las cajas para cada una de las ordenes se le da prioridad a las cajas grandes, las cuales van a llenar dos posiciones del diagrama respetando el orden definido, una vez se paletizan la cajas grandes, la siguiente prioridad será la caja mediana y por último la caja pequeña, dado que en dimensiones solamente estas cajas se diferencian por las alturas sobre el pallet, se van a posicionar en los espacios vacíos respetando el orden del diagrama si por ejemplo llegaran 2 cajas grandes 2 medianas y una pequeña. Primero las dos cajas grandes se sitúan en la posición 1, 2 y 3, 4; después las dos medianas se sitúan en la posición 5 y 6 y por ultimo la pequeña se sitúa en la posición 7.  </p>
-            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/MedioPallet2.jpg" alt="..." /></div>
-            <p class="fs-5 mb-4">  </p>
-            <p class="fs-5 mb-4">  </p>
-            <p class="fs-5 mb-4">  </p>
-        </section>
-        <section class="mb-5">
-            <p class="fs-5 mb-4"> Con estas consideraciones de automatización, se volvió a simular la planta, y se obtuvieron nuevamente, los indicadores. En la siguiente tabla, se resumen aquellos más importantes de manera similar a como se realizó en la planta sin automatizar. </p>
-            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{site.baseurl}}/images/OEE_Auto.png" alt="..." /></div>
-            <p class="fs-5 mb-4"> Y de la misma manera, se volvió a plantear el Value Stream Mapping correspondiente a la planta automatizada. </p>
-            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/VSM_Auto.png" alt="..." /></div>
-        </section>
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5"
+                        src="{{ site.baseurl }}/images/VSM_SinAuto.png" alt="..." /></div>
+                <h2 class="fw-bolder">Planta automatizada</h2>
+                <h3 class="fw-bolder">Modificaciones en las estaciones</h3>
+                <p class="fs-5 mb-4"> Analizando los distintos cuellos de botella en la solución sin automatizar. Como
+                    se pudo ver, tenemos dos etapas y cada etapa tiene asociada procesos para completarse, en la etapa
+                    de almacenamiento se comienza con la respectiva recolección de la caja, un proceso de sorting por
+                    medio de bandas transportadoras, para su posterior almacenamiento en la banda, por medio de un robot
+                    Gantry. Posteriormente, ya con las cajas en el almacén, el mismo robot Gantry hace el proceso de
+                    retiro de la caja del almacén, dejando la caja en una banda para su posterior identificación
+                    mediante la impresión de una etiqueta sobre cada caja con un código propio que indica el pedido
+                    correspondiente y el tipo de caja. Finalmente, estas cajas se llevan a una celda de paletizado,
+                    donde se realiza su respectiva ubicación por medio de un robot de ejes. Veamos pues ahora, algunas
+                    consideraciones a tener en cuenta en cada una de estas etapas. </p>
+            </section>
+            <section class="mb-5">
+                <h3 class="fw-bolder">Gantry almacenamiento</h3>
+                <p class="fs-5 mb-4">Para la etapa de sorting se debe tener en cuenta que el almacenamiento se realiza
+                    por un tipo de caja a la vez. </p>
+                <p class="fs-5 mb-4">Dentro del Gantry se tiene el almacenamiento de las cajas que cuentan con una basa
+                    de 6 pallets europeos, y sobre estos se organizan en 6 filas de diferentes tipos de cajas, en las 2
+                    filas del medio se almacenan las cajas grandes para que la energía de moverlas se la menor posible;
+                    las filas de un extremo tendrán cajas medianas mientras que el otro tendrá cajas pequeñas. </p>
+                <p class="fs-5 mb-4">El almacenamiento comienza cuando se le indica al Gantry el tipo de caja que va a
+                    almacenar, además un operario debe empezar a dejar las cajas sobre la banda de alimentación la cual
+                    se encarga de desplazar las cajas a disposición del Gantry. Una vez la caja está posicionada el
+                    Gantry recoge la caja, la traslada hacia donde hace falta, y espera la nueva caja par almacenar de
+                    nuevo, esto hasta que se haya almacenado el máximo de cajas posibles. </p>
+                <h3 class="fw-bolder">Almacén</h3>
+                <p class="fs-5 mb-4">Como se mencionó anteriormente, cada tipo de caja está en una posición especifica
+                    dentro del almacén. Las cajas grandes que están posicionadas en las filas del medio van a estar
+                    distribuidas en 12 pilas, cada pila va a tener 7 cajas para un total de 84 cajas grandes; las cajas
+                    medianas distribuidas en las filas de un extremo van a estar organizadas en 24 pilas, cada pila va a
+                    tener 7 cajas para un total de 168 cajas medianas; de forma similar las cajas pequeñas estarán
+                    distribuidas en 24 pilas, cada pila contiene 14 cajas para un total de 336 cajas pequeñas. </p>
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5"
+                        src="{{ site.baseurl }}/images/AlmacenCajas.jpg" alt="..." /></div>
+                <p class="fs-5 mb-4">Se tienen programadas 3 alarmas que indican cuando el almacén este a menos del 30%
+                    de su capacidad por cada tipo de caja. Con esto el operario sabe que tiene que detener la etapa de
+                    distribución, accionar el Gantry en etapa de Almacenamiento y suministrar las cajas faltantes.</p>
+                <h3 class="fw-bolder">Gantry distribución</h3>
+                <p class="fs-5 mb-4">Para la etapa de distribución el proceso debe tener almacenado una orden de
+                    cliente, una vez se tiene la orden del cliente se envía al Gantry el tipo de caja que debe llevar a
+                    la banda de etiquetado. El Gantry debe seguir una ruta especifica para evitar que se acumulen las
+                    cajas que entraron de primeras al almacén teniendo un sistema de almacenaje cercano al FIFO (First
+                    In - First Out), esta ruta se explica de mejor manera en el modulo de controladores industriales. El
+                    Gantry lleva una memoria de en cual posición hay caja, y cual es la siguiente caja que debe tomar
+                    según el tipo. </p>
+                <h3 class="fw-bolder">Etiquetado</h3>
+                <p class="fs-5 mb-4">Para la etapa de etiquetado se siguieron el estándar de etiquetado y codificación
+                    GS1-128 que permite representar datos del producto distribuido bajo una estructura estándar y
+                    predefinida conocida como sistema de datos GS1 de uso internacional. Habilita la transmisión y
+                    captura de datos de forma ágil y eficaz. Este sistema de representación de datos se utiliza
+                    principalmente para el etiquetado de unidades de servicio destinados a entornos logísticos, tanto en
+                    la recepción como en la gestión interna y la expedición. </p>
+                <p class="fs-5 mb-4">A partir de esto se escogió una impresora de cajas de inyección de tinta APLINK MRX
+                    72 IMPRESORAS INKJET, Diseñada y fabricada para imprimir textos, imágenes, logos, símbolos y todo
+                    tipo de códigos de barras 100% legibles y compatibles con los estándares de GS1 (GTIN13, GTIN14,
+                    GS1-128, GS1 Datamatrix, etc.) para embalajes secundarios tales como cajas, bandejas, sacos, etc.
+                    Con una velocidad de impresión de 110m/min. </p>
+                <p class="fs-5 mb-4">Según el estándar GS1-128 como se ve en la imagen, la etiqueta debe tener un margen
+                    de 32 mm con respecto a la base y una margen de 19 mm respeto al costado de la caja. </p>
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5"
+                        src="{{ site.baseurl }}/images/EstandarGS1_1.jpg" alt="..." /></div>
+                <p class="fs-5 mb-4">Por esto se define el etiquetado de la siguiente manera para una caja pequeña.
+                    Según estándar GS1-128 tiene las tres secciones de proveedor, cliente y transportista. </p>
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5"
+                        src="{{ site.baseurl }}/images/EstandarGS1_2.jpg" alt="..." /></div>
+                <p class="fs-5 mb-4">Una vez definido esto, la banda de etiquetado desplaza la caja desde el gantry
+                    hasta la celda robotizada, en el camino se imprime la información del cliente y el código de barras.
+                    Para esto la banda va a la velocidad de impresión 110 m/min. La impresora cuenta con un sensor de
+                    proximidad para realizar la impresión en el lugar correcto de la caja. </p>
+                <h3 class="fw-bolder">Paletizado</h3>
+                <p class="fs-5 mb-4">Para la etapa de paletizado, aparte de lo tratado en el modulo de celda robotizada,
+                    se tiene la siguiente consideración: </p>
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5"
+                        src="{{ site.baseurl }}/images/MedioPallet1.jpg" alt="..." /></div>
+                <p class="fs-5 mb-4">En la imagen se puede observar el diagrama del medio pallet europeo donde se van a
+                    colocar las cajas. Para colocar las cajas para cada una de las ordenes se le da prioridad a las
+                    cajas grandes, las cuales van a llenar dos posiciones del diagrama respetando el orden definido, una
+                    vez se paletizan la cajas grandes, la siguiente prioridad será la caja mediana y por último la caja
+                    pequeña, dado que en dimensiones solamente estas cajas se diferencian por las alturas sobre el
+                    pallet, se van a posicionar en los espacios vacíos respetando el orden del diagrama si por ejemplo
+                    llegaran 2 cajas grandes 2 medianas y una pequeña. Primero las dos cajas grandes se sitúan en la
+                    posición 1, 2 y 3, 4; después las dos medianas se sitúan en la posición 5 y 6 y por ultimo la
+                    pequeña se sitúa en la posición 7. </p>
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5"
+                        src="{{ site.baseurl }}/images/MedioPallet2.jpg" alt="..." /></div>
+                <p class="fs-5 mb-4"> </p>
+                <p class="fs-5 mb-4"> </p>
+                <p class="fs-5 mb-4"> </p>
+            </section>
+            <section class="mb-5">
+                <p class="fs-5 mb-4"> Con estas consideraciones de automatización, se volvió a simular la planta, y se
+                    obtuvieron nuevamente, los indicadores. En la siguiente tabla, se resumen aquellos más importantes
+                    de manera similar a como se realizó en la planta sin automatizar. </p>
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{site.baseurl}}/images/OEE_Auto.png"
+                        alt="..." /></div>
+                <p class="fs-5 mb-4"> Y de la misma manera, se volvió a plantear el Value Stream Mapping correspondiente
+                    a la planta automatizada. </p>
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/VSM_Auto.png"
+                        alt="..." /></div>
+            </section>
         </div>
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-6">
                 <div class="text-center mb-5">
-                    <p class="lead fw-normal text-muted">Con esta propuesta de automatización explicada en este módulo, y como se gestionaron los procesos, le invitamos a continaur recorriendo la página.</p>
+                    <p class="lead fw-normal text-muted">Con esta propuesta de automatización explicada en este módulo,
+                        y como se gestionaron los procesos, le invitamos a continaur recorriendo la página.</p>
                     <a class="text-decoration-none" href="#!">
                         View project
                         <i class="bi-arrow-right"></i>
@@ -96,5 +194,14 @@ layout: default
                 </div>
             </div>
         </div>
+        <h3 class="fw-bolder">Integración MES</h3>
+        <p class="fs-5 mb-4">En este caso se plantea una integración con los módulos MES de Ignition creados por
+            Sepasoft. Estos módulos nos permiten conectar todos los daos de la operación y reportarlos adecuadamente con
+            cada módulo, estos módulos se pueden descargar de : <a href="https://www.sepasoft.com/downloads/">Sepasoft 
+            MES Downloads | Sepasoft MES Solutions</a> y luego el proceso de instalación en ignition es igual a la
+            de cualquier otro modulo, además ofrecen compatibilidad de diseño de interfaces con Desing Launcher de
+            ignition lo que nos permite centralizar la información y los esquemas de diseño </p>
+            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/mes.png"
+                alt="..." /></div>
     </div>
 </section>
