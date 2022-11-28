@@ -9,37 +9,55 @@ layout: default
         </div>
         <div class="row gx-5 justify-content-center">
             <h2>Hoja de Ruta Diseño de Celda de Manufactura</h2>
-            <div class="d-flex align-items-center mt-lg-5 mb-4"><img class="img-fluid rounded-3 my-5" src="{{ site.baseurl }}/images/HojadeRuta_Celda.png" alt="Hoja de Ruta" /></div>
-            <h1>Diseño Preliminar</h1> 
+            <div class="d-flex align-items-center mt-lg-5 mb-4"><img class="img-fluid rounded-3 my-5"
+                    src="{{ site.baseurl }}/images/HojadeRuta_Celda.png" alt="Hoja de Ruta" /></div>
+            <h1>Diseño Preliminar</h1>
             <h2>Selección de etapa</h2>
             <section class="mb-5">
-                <p>Para esta aplicación de automatización se definieron dos etapas para el uso del gantry y del robot. La primera es la etapa de selección y la segunda la de paletizado, así se tiene que el gantry cumplirá las funciones de selección del paquete desde el almacén para llevarlo al inicio del proceso donde circulará por una banda transportadora hasta la siguiente etapa que será la etapa de identificación, posteriormente desde la etiquetadora llegará a la etapa de paletizado por medio de otra banda donde el robot se encargará de tomar las cajas y acomodarlas de la mejor forma en un pallet europeo mediano.</p>
+                <p>Para esta aplicación de automatización se definieron dos etapas para el uso del gantry y del robot.
+                    La primera es la etapa de selección y la segunda la de paletizado, así se tiene que el gantry
+                    cumplirá las funciones de selección del paquete desde el almacén para llevarlo al inicio del proceso
+                    donde circulará por una banda transportadora hasta la siguiente etapa que será la etapa de
+                    identificación, posteriormente desde la etiquetadora llegará a la etapa de paletizado por medio de
+                    otra banda donde el robot se encargará de tomar las cajas y acomodarlas de la mejor forma en un
+                    pallet europeo mediano.</p>
             </section>
-            <h2> Selección de robots  </h2> 
+            <h2> Selección de robots </h2>
             <div class="row gx-5">
-                <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/IRB260.jpg" alt="..." /></div>
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/IRB260.jpg"
+                        alt="..." /></div>
             </div>
             <section class="mb-5">
-                <p>Para la celda de paletizado se seleccionó el robot IRB 260 de ABB, de 4 ejes, con sus respectivos accesorios:</p>
-                <ul> <li> Robot: IRB 260</li>
+                <p>Para la celda de paletizado se seleccionó el robot IRB 260 de ABB, de 4 ejes, con sus respectivos
+                    accesorios:</p>
+                <ul>
+                    <li> Robot: IRB 260</li>
                     <li> Controlador: IRC 5</li>
-                    <li> Gripper: Robotiq EPick Double Suction Cup Kit. Peso de 710 g, y capacidad de carga de 10 kg.</li>
+                    <li> Gripper: Robotiq EPick Double Suction Cup Kit. Peso de 710 g, y capacidad de carga de 10 kg.
+                    </li>
                 </ul>
-            
-            <p>Este robot fue seleccionado ya que cumplía con parámetros de alcance, su payload máximo de 30 kg y demás. Por ejemplo, en las siguientes imágenes se muestra su relación con los demás componentes de la celda en términos del alcance.</p>
-            <div class="row gx-5">
-                <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/AlcanceUno.png" alt="..." /></div>
-            </div>
-            <div class="row gx-5">
-                <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/Alcance2.png" alt="..." /></div>
-            </div>
-            
-            <p> Para la etapa de almacenamiento y de distribución se seleccionó un sistema Gantry Parker PPR 50. Este sistema cuenta con un máximo de carga de 12 kg. Y unas dimensiones que permiten el abastecimiento total del almacén. De igual manera, cuenta con su controlador Compax.
-            </p>
-            <div class="row gx-5">
-                <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/GantryParker.webp" alt="..." /></div>
-            </div>
-        </section>
+
+                <p>Este robot fue seleccionado ya que cumplía con parámetros de alcance, su payload máximo de 30 kg y
+                    demás. Por ejemplo, en las siguientes imágenes se muestra su relación con los demás componentes de
+                    la celda en términos del alcance.</p>
+                <div class="row gx-5">
+                    <div class="col-12"><img class="img-fluid rounded-3 mb-5"
+                            src="{{ site.baseurl }}/images/AlcanceUno.png" alt="..." /></div>
+                </div>
+                <div class="row gx-5">
+                    <div class="col-12"><img class="img-fluid rounded-3 mb-5"
+                            src="{{ site.baseurl }}/images/Alcance2.png" alt="..." /></div>
+                </div>
+
+                <p> Para la etapa de almacenamiento y de distribución se seleccionó un sistema Gantry Parker PPR 50.
+                    Este sistema cuenta con un máximo de carga de 12 kg. Y unas dimensiones que permiten el
+                    abastecimiento total del almacén. De igual manera, cuenta con su controlador Compax.
+                </p>
+                <div class="row gx-5">
+                    <div class="col-12"><img class="img-fluid rounded-3 mb-5"
+                            src="{{ site.baseurl }}/images/GantryParker.webp" alt="..." /></div>
+                </div>
+            </section>
             <h2> Estado de entrada y salida del producto de celda. </h2>
             <section class="mb-5">
                 <h3>Pick and Place</h3>
@@ -57,56 +75,64 @@ layout: default
             </section>
             <h2> Disposición de la celda</h2>
             <div class="row gx-5">
-                <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/LayoutCeldaRobot.png" alt="..." /></div>
-            <p> En la imagen se muestra la distribución de espacio en la celda de paletizado, así como al relación con el flujo de material a lo largo de la misma. Una celda centrada en robot, con dos bandas para las cajas de ingreso y un espacio para ingreso de pallets con el propósito de ubicar las cajas.  </p>
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5"
+                        src="{{ site.baseurl }}/images/LayoutCeldaRobot.png" alt="..." /></div>
+                <p> En la imagen se muestra la distribución de espacio en la celda de paletizado, así como al relación
+                    con el flujo de material a lo largo de la misma. Una celda centrada en robot, con dos bandas para
+                    las cajas de ingreso y un espacio para ingreso de pallets con el propósito de ubicar las cajas. </p>
             </div>
             <h2> BOM </h2>
 
             <p><b>Celda Pick and Place, etapa de almacenamiento y distribución:</b></p>
 
-<ul>
-<li>1 Sistema Gantry Parker</li>
-<li>Barrera de Seguridad</li>
-<li>2 Paradas de emergencia (Tipo Comando Seguro)</li>
-<li>Enclavamiento de puerta</li>
-<li>Torres de luz</li>
-<li>Luz de advertencia</li>
-<li>Escanear laser de área</li>
-<li>Banda transportadora (Banda 1) Puede ser plana o de rodillos</li>
-<li>Sensor de ingreso de caja en banda 1</li>
-<li>Estante de almacenamiento</li>
-<li>Sensor de uso de almacenamiento por cajas</li>
-<li>Gripper</li>
-</ul>
+            <ul>
+                <li>1 Sistema Gantry Parker</li>
+                <li>Barrera de Seguridad</li>
+                <li>2 Paradas de emergencia (Tipo Comando Seguro)</li>
+                <li>Enclavamiento de puerta</li>
+                <li>Torres de luz</li>
+                <li>Luz de advertencia</li>
+                <li>Escanear laser de área</li>
+                <li>Banda transportadora (Banda 1) Puede ser plana o de rodillos</li>
+                <li>Sensor de ingreso de caja en banda 1</li>
+                <li>Estante de almacenamiento</li>
+                <li>Sensor de uso de almacenamiento por cajas</li>
+                <li>Gripper</li>
+            </ul>
 
-<p><b>Celda Paletizado, etapa de Paletizado:</b></p>
+            <p><b>Celda Paletizado, etapa de Paletizado:</b></p>
 
-<ul>
-<li>1 Robot ABB IRB 260</li>
-<li>1 Controlador de robot: Compacto</li>
-<li>Barrera de Seguridad</li>
-<li>2 Paradas de emergencia (Tipo Comando Seguro)</li>
-<li>Enclavamiento de puerta</li>
-<li>Torres de luz</li>
-<li>Luz de advertencia</li>
-<li>Escanear laser de área</li>
-<li>Banda transportadora (Banda 2) Inicialmente de rodillos para el uso de un centrador</li>
-<li>Sensor de llegada de caja en banda 2</li>
-<li>Lector codigo de barras para identificación del tamaño de caja</li>
-<li>Centrador de cajas</li>
-<li>Soporte para pallet</li>
-<li>Gripper</li>
-</ul>
-<h2> Simulación de la celda de manufactura robotizada </h2>
+            <ul>
+                <li>1 Robot ABB IRB 260</li>
+                <li>1 Controlador de robot: Compacto</li>
+                <li>Barrera de Seguridad</li>
+                <li>2 Paradas de emergencia (Tipo Comando Seguro)</li>
+                <li>Enclavamiento de puerta</li>
+                <li>Torres de luz</li>
+                <li>Luz de advertencia</li>
+                <li>Escanear laser de área</li>
+                <li>Banda transportadora (Banda 2) Inicialmente de rodillos para el uso de un centrador</li>
+                <li>Sensor de llegada de caja en banda 2</li>
+                <li>Lector codigo de barras para identificación del tamaño de caja</li>
+                <li>Centrador de cajas</li>
+                <li>Soporte para pallet</li>
+                <li>Gripper</li>
+            </ul>
+            <h2> Simulación de la celda de manufactura robotizada </h2>
 
-<div class="col-12 text-center">
-    <iframe class="col-12" src="https://drive.google.com/file/d/10tY_IBpj59RdtpcgSr7bKj4WCzdGsrrO/preview" height="600" allow="autoplay"></iframe></div>
+            <div class="col-12 text-center">
+                <iframe class="col-12" src="https://drive.google.com/file/d/10tY_IBpj59RdtpcgSr7bKj4WCzdGsrrO/preview"
+                    height="600" allow="autoplay"></iframe>
+            </div>
 
             <h2> Evaluación de riesgos y peligros. </h2>
             <section class="mb-5">
-                <p class="fs-5 mb-4">Se realizó el respectivo análisis de posibles peligros en la celda de manufactura asociada al proyecto en cuestión. Tras un exhaustivo análisis, se consideraron pertinentes los peligros establecidos en la siguiente lista:</p>
+                <p class="fs-5 mb-4">Se realizó el respectivo análisis de posibles peligros en la celda de manufactura
+                    asociada al proyecto en cuestión. Tras un exhaustivo análisis, se consideraron pertinentes los
+                    peligros establecidos en la siguiente lista:</p>
                 <ul>
-                    <li>Golpe durante operación del manipulador por descuido del trabajador o mal funcionamiento del robot.</li>
+                    <li>Golpe durante operación del manipulador por descuido del trabajador o mal funcionamiento del
+                        robot.</li>
                     <li>Atrapamiento de extremidades entre las articulaciones del manipulador.</li>
                     <li>Choques eléctricos.</li>
                     <li>Atrapamiento o arrastre con el gripper.</li>
@@ -116,12 +142,27 @@ layout: default
                     <li>Aplastamiento de extremidades por caída inesperada de cajas.</li>
                     <li>Enredamiento con la banda transportadora.</li>
                     <li>Colisión debido a mal funcionamiento del robot durante mantenimiento.</li>
-                  </ul>
-                <p class="fs-5 mb-4">Posteriormente, y utilizando el sistema de cálculo de riesgos de Jokab, se procedió a realizar la respectiva matriz de riesgos relacionada a los peligros identíficados y su probabilidad de ocurrencia. La matriz en cuestión se encuentra a continuación.</p>
-                <iframe src="https://docs.google.com/spreadsheets/d/1iORN_FZUaZOcBxDfEjSv_9PMh-vHLGl1/edit?usp=sharing&ouid=100074325686200965100&rtpof=true&sd=true" width="1000" height="680"></iframe>
-                <p class="fs-5 mb-4">Como un análisis preliminar destinado a la reducción de posibles riesgos se requerirá de un uso mandatorio de elementos de seguridad para la manipulación del robot y/o transitar cerca a su espacio de trabajo.</p>
-                <p class="fs-5 mb-4">Entre estos elementos se encuentran: Botas punta de acero, casco de seguridad, guantes de seguridad (protección contra el calor), overol y gafas de seguridad. Además, se deben seguir normas básicas de seguridad al estar en contacto con la celda robotizada tales como: mantener cabello largo amarrado y fuera del alcance de las máquinas, no transitar dentro del espacio de trabajo del robot ni de las máquinas (dentro de lo posible), no ingresar alimentos ni bebidas a la celda de manufactura y realizar únicamente el contacto físico estrictamente requerido con las máquinas y elementos de la celda de manufactura.</p>
-                <p class="fs-5 mb-4">Como elementos de reducción de riesgo disponibles en la celda de manufactura se tienen: Barreras de seguridad y señalización de la zona de trabajo del manipulador (con el área de trabajo y área segura ya establecidas), paradas de emergencia, sensor de escáner de área y enclavamiento de puerta.</p>
+                </ul>
+                <p class="fs-5 mb-4">Posteriormente, y utilizando el sistema de cálculo de riesgos de Jokab, se procedió
+                    a realizar la respectiva matriz de riesgos relacionada a los peligros identíficados y su
+                    probabilidad de ocurrencia. La matriz en cuestión se encuentra a continuación.</p>
+                <iframe
+                    src="https://docs.google.com/spreadsheets/d/1iORN_FZUaZOcBxDfEjSv_9PMh-vHLGl1/edit?usp=sharing&ouid=100074325686200965100&rtpof=true&sd=true"
+                    width="1000" height="680"></iframe>
+                <p class="fs-5 mb-4">Como un análisis preliminar destinado a la reducción de posibles riesgos se
+                    requerirá de un uso mandatorio de elementos de seguridad para la manipulación del robot y/o
+                    transitar cerca a su espacio de trabajo.</p>
+                <p class="fs-5 mb-4">Entre estos elementos se encuentran: Botas punta de acero, casco de seguridad,
+                    guantes de seguridad (protección contra el calor), overol y gafas de seguridad. Además, se deben
+                    seguir normas básicas de seguridad al estar en contacto con la celda robotizada tales como: mantener
+                    cabello largo amarrado y fuera del alcance de las máquinas, no transitar dentro del espacio de
+                    trabajo del robot ni de las máquinas (dentro de lo posible), no ingresar alimentos ni bebidas a la
+                    celda de manufactura y realizar únicamente el contacto físico estrictamente requerido con las
+                    máquinas y elementos de la celda de manufactura.</p>
+                <p class="fs-5 mb-4">Como elementos de reducción de riesgo disponibles en la celda de manufactura se
+                    tienen: Barreras de seguridad y señalización de la zona de trabajo del manipulador (con el área de
+                    trabajo y área segura ya establecidas), paradas de emergencia, sensor de escáner de área y
+                    enclavamiento de puerta.</p>
             </section>
 
         </div>
