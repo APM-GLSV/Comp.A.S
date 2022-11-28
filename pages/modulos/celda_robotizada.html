@@ -13,12 +13,33 @@ layout: default
             <h1>Diseño Preliminar</h1> 
             <h2>Selección de etapa</h2>
             <section class="mb-5">
-                <p>Para esta aplicación de automatización se definieron dos etapas para el uso del gantry y del robot, la primera es la etapa de selección y la segunda la de paletizado, así se tiene que el gantry cumplirá las funciones de selección del paquete desde el almacén para llevarlo al inicio del proceso donde circulará por una banda transportadora hasta la siguiente etapa que será la etapa de identificación, posteriormente desde la etiquetadora llegará a la etapa de paletizado por medio de otra banda donde el robot se encargará de tomar las cajas y acomodarlas de la mejor forma en un Palet europeo mediano.</p>
+                <p>Para esta aplicación de automatización se definieron dos etapas para el uso del gantry y del robot. La primera es la etapa de selección y la segunda la de paletizado, así se tiene que el gantry cumplirá las funciones de selección del paquete desde el almacén para llevarlo al inicio del proceso donde circulará por una banda transportadora hasta la siguiente etapa que será la etapa de identificación, posteriormente desde la etiquetadora llegará a la etapa de paletizado por medio de otra banda donde el robot se encargará de tomar las cajas y acomodarlas de la mejor forma en un pallet europeo mediano.</p>
             </section>
-            <h2> Selección de aplicación.  </h2> 
+            <h2> Selección de robots  </h2> 
+            <div class="row gx-5">
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/IRB260.jpg" alt="..." /></div>
+            </div>
             <section class="mb-5">
-                <p>Como se describió anteriormente, el sistema gantry y el robot harán procesos de selección y paletizados entre los tres distintos tamaños de cajas que maneja el almacén por lo cual la aplicación del gantry será de tipo pick and place y el robot será paletizador. </p>
-            </section>
+                <p>Para la celda de paletizado se seleccionó el robot IRB 260 de ABB, de 4 ejes, con sus respectivos accesorios:</p>
+                <ul> <li> Robot: IRB 260</li>
+                    <li> Controlador: IRC 5</li>
+                    <li> Gripper: Robotiq EPick Double Suction Cup Kit. Peso de 710 g, y capacidad de carga de 10 kg.</li>
+                </ul>
+            
+            <p>Este robot fue seleccionado ya que cumplía con parámetros de alcance, su payload máximo de 30 kg y demás. Por ejemplo, en las siguientes imágenes se muestra su relación con los demás componentes de la celda en términos del alcance.</p>
+            <div class="row gx-5">
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/AlcanceUno.png" alt="..." /></div>
+            </div>
+            <div class="row gx-5">
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/Alcance2.png" alt="..." /></div>
+            </div>
+            
+            <p> Para la etapa de almacenamiento y de distribución se seleccionó un sistema Gantry Parker PPR 50. Este sistema cuenta con un máximo de carga de 12 kg. Y unas dimensiones que permiten el abastecimiento total del almacén. De igual manera, cuenta con su controlador Compax.
+            </p>
+            <div class="row gx-5">
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/GantryParker.webp" alt="..." /></div>
+            </div>
+        </section>
             <h2> Estado de entrada y salida del producto de celda. </h2>
             <section class="mb-5">
                 <h3>Pick and Place</h3>
@@ -32,10 +53,16 @@ layout: default
                 <ul>
                     <li>Producto en banda transportadora</li>
                     <li>Caja según orden del cliente</li>
-                    <li>Caja con orientación específica en el almacénla banda</li>
+                    <li>Caja con orientación específica en la banda</li>
             </section>
-            <h2> BOM preliminar, selección del manipulador. </h2>
-            <p><b>Celda Pick and Place, etapa de selección:</b></p>
+            <h2> Disposición de la celda</h2>
+            <div class="row gx-5">
+                <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/LayoutCeldaRobot.png" alt="..." /></div>
+            <p> En la imagen se muestra la distribución de espacio en la celda de paletizado, así como al relación con el flujo de material a lo largo de la misma. Una celda centrada en robot, con dos bandas para las cajas de ingreso y un espacio para ingreso de pallets con el propósito de ubicar las cajas.  </p>
+            </div>
+            <h2> BOM </h2>
+
+            <p><b>Celda Pick and Place, etapa de almacenamiento y distribución:</b></p>
 
 <ul>
 <li>1 Sistema Gantry Parker</li>
@@ -75,7 +102,6 @@ layout: default
 <div class="col-12 text-center">
     <iframe class="col-12" src="https://drive.google.com/file/d/10tY_IBpj59RdtpcgSr7bKj4WCzdGsrrO/preview" height="600" allow="autoplay"></iframe></div>
 
-            <h2> Ciclo útil de la celda de manufactura. </h2>
             <h2> Evaluación de riesgos y peligros. </h2>
             <section class="mb-5">
                 <p class="fs-5 mb-4">Se realizó el respectivo análisis de posibles peligros en la celda de manufactura asociada al proyecto en cuestión. Tras un exhaustivo análisis, se consideraron pertinentes los peligros establecidos en la siguiente lista:</p>
