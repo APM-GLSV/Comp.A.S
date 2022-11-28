@@ -27,7 +27,7 @@ layout: default
                     de material, que provee de todos los tipos de cajas, y el personal de la planta va desplazando estas
                     cajas hacia el almacén. Este proceso de almacenamiento inicialmente no está controlado, y se
                     reabastece cada vez que se acaba algún tipo de caja. Al ingresar un pedido, que consiste en cajas de
-                    cualquier tipo un operario debe retirar cada caja del almacén y situarla en una banda
+                    cualquier tipo, un operario debe retirar cada caja del almacén y situarla en una banda
                     transportadora. Al hacer esto, se desplazan las cajas hasta una etapa de etiquetado, donde un
                     operario adhiere una etiqueta con información sobre el pedido a cada caja, así como información
                     sobre ella misma. Finalmente se realiza un proceso de paletizado, en el que el operario ordena las 5
@@ -80,29 +80,29 @@ layout: default
                         src="{{ site.baseurl }}/images/VSM_SinAuto.png" alt="..." /></div>
                 <h2 class="fw-bolder">Planta automatizada</h2>
                 <h3 class="fw-bolder">Modificaciones en las estaciones</h3>
-                <p class="fs-5 mb-4"> Analizando los distintos cuellos de botella en la solución sin automatizar. Como
+                <p class="fs-5 mb-4"> Analizando los distintos cuellos de botella en la solución sin automatizar, se proponen modificaciones en la planta. Como
                     se pudo ver, tenemos dos etapas y cada etapa tiene asociada procesos para completarse, en la etapa
                     de almacenamiento se comienza con la respectiva recolección de la caja, un proceso de sorting por
-                    medio de bandas transportadoras, para su posterior almacenamiento en la banda, por medio de un robot
+                    medio de bandas transportadoras, para su posterior almacenamiento por medio de un robot
                     Gantry. Posteriormente, ya con las cajas en el almacén, el mismo robot Gantry hace el proceso de
                     retiro de la caja del almacén, dejando la caja en una banda para su posterior identificación
                     mediante la impresión de una etiqueta sobre cada caja con un código propio que indica el pedido
                     correspondiente y el tipo de caja. Finalmente, estas cajas se llevan a una celda de paletizado,
-                    donde se realiza su respectiva ubicación por medio de un robot de ejes. Veamos pues ahora, algunas
+                    donde se realiza su respectiva ubicación por medio de un robot de 4 ejes. Veamos pues ahora, algunas
                     consideraciones a tener en cuenta en cada una de estas etapas. </p>
             </section>
             <section class="mb-5">
                 <h3 class="fw-bolder">Gantry almacenamiento</h3>
                 <p class="fs-5 mb-4">Para la etapa de sorting se debe tener en cuenta que el almacenamiento se realiza
                     por un tipo de caja a la vez. </p>
-                <p class="fs-5 mb-4">Dentro del Gantry se tiene el almacenamiento de las cajas que cuentan con una basa
+                <p class="fs-5 mb-4">Dentro del Gantry se tiene el almacenamiento de las cajas que cuentan con una base
                     de 6 pallets europeos, y sobre estos se organizan en 6 filas de diferentes tipos de cajas, en las 2
-                    filas del medio se almacenan las cajas grandes para que la energía de moverlas se la menor posible;
+                    filas del medio se almacenan las cajas grandes para que la energía de moverlas de la menor posible;
                     las filas de un extremo tendrán cajas medianas mientras que el otro tendrá cajas pequeñas. </p>
                 <p class="fs-5 mb-4">El almacenamiento comienza cuando se le indica al Gantry el tipo de caja que va a
                     almacenar, además un operario debe empezar a dejar las cajas sobre la banda de alimentación la cual
                     se encarga de desplazar las cajas a disposición del Gantry. Una vez la caja está posicionada el
-                    Gantry recoge la caja, la traslada hacia donde hace falta, y espera la nueva caja par almacenar de
+                    Gantry recoge la caja, la traslada hacia donde hace falta, y espera la nueva caja para almacenar de
                     nuevo, esto hasta que se haya almacenado el máximo de cajas posibles. </p>
                 <h3 class="fw-bolder">Almacén</h3>
                 <p class="fs-5 mb-4">Como se mencionó anteriormente, cada tipo de caja está en una posición especifica
@@ -132,10 +132,10 @@ layout: default
                     principalmente para el etiquetado de unidades de servicio destinados a entornos logísticos, tanto en
                     la recepción como en la gestión interna y la expedición. </p>
                 <p class="fs-5 mb-4">A partir de esto se escogió una impresora de cajas de inyección de tinta APLINK MRX
-                    72 IMPRESORAS INKJET, Diseñada y fabricada para imprimir textos, imágenes, logos, símbolos y todo
+                    72 IMPRESORAS INKJET, diseñada y fabricada para imprimir textos, imágenes, logos, símbolos y todo
                     tipo de códigos de barras 100% legibles y compatibles con los estándares de GS1 (GTIN13, GTIN14,
                     GS1-128, GS1 Datamatrix, etc.) para embalajes secundarios tales como cajas, bandejas, sacos, etc.
-                    Con una velocidad de impresión de 110m/min. </p>
+                    Con una velocidad máxima de impresión de 110 m/min. </p>
                 <p class="fs-5 mb-4">Según el estándar GS1-128 como se ve en la imagen, la etiqueta debe tener un margen
                     de 32 mm con respecto a la base y una margen de 19 mm respeto al costado de la caja. </p>
                 <div class="col-12"><img class="img-fluid rounded-3 mb-5"
@@ -146,7 +146,7 @@ layout: default
                         src="{{ site.baseurl }}/images/EstandarGS1_2.jpg" alt="..." /></div>
                 <p class="fs-5 mb-4">Una vez definido esto, la banda de etiquetado desplaza la caja desde el gantry
                     hasta la celda robotizada, en el camino se imprime la información del cliente y el código de barras.
-                    Para esto la banda va a la velocidad de impresión 110 m/min. La impresora cuenta con un sensor de
+                    Para esto la banda tiene que moverse a la misma velocidad de impresión. La impresora cuenta con un sensor de
                     proximidad para realizar la impresión en el lugar correcto de la caja. </p>
                 <h3 class="fw-bolder">Paletizado</h3>
                 <p class="fs-5 mb-4">Para la etapa de paletizado, aparte de lo tratado en el modulo de celda robotizada,
@@ -154,7 +154,7 @@ layout: default
                 <div class="col-12"><img class="img-fluid rounded-3 mb-5"
                         src="{{ site.baseurl }}/images/MedioPallet1.jpg" alt="..." /></div>
                 <p class="fs-5 mb-4">En la imagen se puede observar el diagrama del medio pallet europeo donde se van a
-                    colocar las cajas. Para colocar las cajas para cada una de las ordenes se le da prioridad a las
+                    colocar las cajas. Para colocar las cajas correspondientes a cada una de las ordenes se le da prioridad a las
                     cajas grandes, las cuales van a llenar dos posiciones del diagrama respetando el orden definido, una
                     vez se paletizan la cajas grandes, la siguiente prioridad será la caja mediana y por último la caja
                     pequeña, dado que en dimensiones solamente estas cajas se diferencian por las alturas sobre el
@@ -180,26 +180,26 @@ layout: default
                         alt="..." /></div>
             </section>
         </div>
-        <div class="row gx-5 justify-content-center">
-            <div class="col-lg-6">
-                <div class="text-center mb-5">
-                    <p class="lead fw-normal text-muted">Con esta propuesta de automatización explicada en este módulo,
-                        y como se gestionaron los procesos, le invitamos a continaur recorriendo la página.</p>
-                    <a class="text-decoration-none" href="#!">
-                        View project
-                        <i class="bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
         <h3 class="fw-bolder">Integración MES</h3>
         <p class="fs-5 mb-4">En este caso se plantea una integración con los módulos MES de Ignition creados por
-            Sepasoft. Estos módulos nos permiten conectar todos los daos de la operación y reportarlos adecuadamente con
+            Sepasoft. Estos módulos nos permiten conectar todos los datos de la operación y reportarlos adecuadamente con
             cada módulo, estos módulos se pueden descargar de : <a href="https://www.sepasoft.com/downloads/">Sepasoft 
-            MES Downloads | Sepasoft MES Solutions</a> y luego el proceso de instalación en ignition es igual a la
-            de cualquier otro modulo, además ofrecen compatibilidad de diseño de interfaces con Desing Launcher de
-            ignition lo que nos permite centralizar la información y los esquemas de diseño </p>
+            MES Downloads | Sepasoft MES Solutions</a> y luego el proceso de instalación en Ignition es igual a la
+            de cualquier otro modulo, además ofrecen compatibilidad de diseño de interfaces con Designer Launcher de
+            Ignition lo que nos permite centralizar la información y los esquemas de diseño </p>
             <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/mes.png"
                 alt="..." /></div>
+    </div>
+    <div class="row gx-5 justify-content-center">
+        <div class="col-lg-6">
+            <div class="text-center mb-5">
+                <p class="lead fw-normal text-muted">Con esta propuesta de automatización explicada en este módulo,
+                    y como se gestionaron los procesos, le invitamos a continuar recorriendo la página.</p>
+                <a class="text-decoration-none" href="#!">
+                    View project
+                    <i class="bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
     </div>
 </section>
