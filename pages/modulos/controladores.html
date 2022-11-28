@@ -8,30 +8,88 @@ layout: default
             <div class="col-lg-6">
                 <div class="text-center mb-5">
                     <h1 class="fw-bolder">Controladores Industriales</h1>
-                    <p class="lead fw-normal text-muted mb-0">En este modulo se propone una solución con un controlador industrial, donde se programa por medio de implementación de lógica programada Ladder en forma de Grafcet. Se presentan la descripción funcional, la descripción tecnológica, y la programación lógica de control. Finalmente se presenta un vídeo mostrando el funcionamiento del programa. También se realiza una descripción global de cómo se programaría el controlador del Gantry seleccionado y la consideración que se debe tener.   </p>
+                    <p class="lead fw-normal text-muted mb-0">En este modulo se propone una solución con un controlador
+                        industrial, donde se programa por medio de implementación de lógica programada Ladder en forma
+                        de Grafcet. Se presentan la descripción funcional, la descripción tecnológica, y la programación
+                        lógica de control. Finalmente se presenta un vídeo mostrando el funcionamiento del programa.
+                        También se realiza una descripción global de cómo se programaría el controlador del Gantry
+                        seleccionado y la consideración que se debe tener. </p>
                 </div>
             </div>
         </div>
         <section class="mb-5">
             <h3 class="fw-bolder">Descripción funcional y tecnológica </h3>
-            <p class="fs-5 mb-4">Se definen dos grandes etapas en la solución propuesta, la primera es la etapa de almacenamiento, esta estaba consiste en colocar cajas en la banda de suministro, y un Gantry las almacena y organiza dentro del mismo, esta etapa se realizará al comienzo de la jornada laboral para comenzar con el almacén lleno, la etapa de almacenamiento también se ejecutará cuando la cantidad almacenada de un tipo de caja baje a menos del 30%.  </p>
-            <p class="fs-5 mb-4">La segunda etapa es la etapa de distribución, la cual consiste en activar el Gantry para que lleve las cajas de las órdenes de los clientes a la banda de suministro, la banda se enciende para llevar la caja a la etapa de etiquetado y de paletizado.  </p>
-            <p class="fs-5 mb-4">Se presenta entonces el Grafcet de nivel 1, en el cual se realiza una descripción funcional del proceso. En esta imagen se observa el Grafcet nivel 1 de la etapa de almacenamiento. Para ingresar a la etapa 0 se debe pulsar Start Físico o con una señal de Start desde el SCADA. A la etapa 1 ingresa cuando se le manda la señal de que comience etapas de almacenamiento, señal que le llega desde el SCADA, el realiza una comunicación con el Gantry para decir el tipo de caja que va a almacenar. En la etapa 2 se espera a que el operario ponga la caja en la banda, de tal forma que son en sensor óptico al comienzo de la banda detecte la caja y encienda la banda de suministro en la etapa 3. Cuando llega al final de la banda se activa un sensor que activa la etapa 4, la banda se desactiva y se le envía señal al Gantry de que tiene que realizar el movimiento de almacenar caja en la etapa 5. Al mismo tiempo se vuelve a la etapa 2 para esperar una nueva caja. Cuando el Gantry termina de dejar la caja en el almacén se desactiva el Gantry en la etapa 6. Si el almacén esta lleno sale de las etapas de almacenamiento y apaga el Gantry (etapa 7), donde va a esperar la señal de distribución por medio del SCADA; de lo contrario se dirige a la etapa 2 para esperar una caja, y realizar todo el ciclo hasta que llene el almacén.   </p>
-            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/GRAFCET_LEVEL1_P1.jpg" alt="..." /></div>
-            <p class="fs-5 mb-4">A continuación, se muestra la descripción tecnológica de las etapas de almacenamiento por medio del Grafcet de nivel 2.   </p>
-            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/GRAFCET_LEVEL2_P1.jpg" alt="..." /></div>
-            <p class="fs-5 mb-4">A continuación, se muestra la descripción Funcional de la etapa de distribución, de igual manera que en el anterior espera estar inicializado y una señal de Start de distribución enviada por el SCADA para entrar a la etapa 9. En la etapa 9 espera la orden la orden de un cliente, en el caso de la simulación se envía por medio del SCADA un caso en específico de 5 diferentes casos ya programados. Una vez llega el caso comienza la etapa 10, la cual toma la primera caja enviada en el caso y le da la información al Gantry para que mueva la caja del almacén a la banda de distribución. Una vez la caja está posicionada encima de la banda, entra en la etapa 11 para que el Gantry suelte la caja, Una vez soltada la caja el sensor de la banda de distribución activa la etapa 12 esta etapa enciende la banda de distribución. Aquí el programa hace dos tareas en paralelo, pregunta si es la última caja de la orden o hace falta cajas de la orden, Si es la última caja el vuelve a la etapa 9 a esperar un caso, de lo contrario va a la etapa 10 para que el Gantry vaya posicionando la caja siguiente. Por el otro lado se tienen que la etapa 13 acciona la etiquetadora cuando la caja pasa por el sensor de esta, activándola, cuando la caja ha sido etiquetada se activa la etapa 14 que es la que desactiva la etiquetadora. La etapa 15 entra cuando la caja ha llegado al final de la banda y está en la celda robotizada, en ese momento se desactiva la banda. </p>
+            <p class="fs-5 mb-4">Se definen dos grandes etapas en la solución propuesta, la primera es la etapa de
+                almacenamiento, esta estaba consiste en colocar cajas en la banda de suministro, y un Gantry las
+                almacena y organiza dentro del mismo, esta etapa se realizará al comienzo de la jornada laboral para
+                comenzar con el almacén lleno, la etapa de almacenamiento también se ejecutará cuando la cantidad
+                almacenada de un tipo de caja baje a menos del 30%. </p>
+            <p class="fs-5 mb-4">La segunda etapa es la etapa de distribución, la cual consiste en activar el Gantry
+                para que lleve las cajas de las órdenes de los clientes a la banda de suministro, la banda se enciende
+                para llevar la caja a la etapa de etiquetado y de paletizado. </p>
+            <p class="fs-5 mb-4">Se presenta entonces el Grafcet de nivel 1, en el cual se realiza una descripción
+                funcional del proceso. En esta imagen se observa el Grafcet nivel 1 de la etapa de almacenamiento. Para
+                ingresar a la etapa 0 se debe pulsar Start Físico o con una señal de Start desde el SCADA. A la etapa 1
+                ingresa cuando se le manda la señal de que comience etapas de almacenamiento, señal que le llega desde
+                el SCADA, el realiza una comunicación con el Gantry para decir el tipo de caja que va a almacenar. En la
+                etapa 2 se espera a que el operario ponga la caja en la banda, de tal forma que son en sensor óptico al
+                comienzo de la banda detecte la caja y encienda la banda de suministro en la etapa 3. Cuando llega al
+                final de la banda se activa un sensor que activa la etapa 4, la banda se desactiva y se le envía señal
+                al Gantry de que tiene que realizar el movimiento de almacenar caja en la etapa 5. Al mismo tiempo se
+                vuelve a la etapa 2 para esperar una nueva caja. Cuando el Gantry termina de dejar la caja en el almacén
+                se desactiva el Gantry en la etapa 6. Si el almacén esta lleno sale de las etapas de almacenamiento y
+                apaga el Gantry (etapa 7), donde va a esperar la señal de distribución por medio del SCADA; de lo
+                contrario se dirige a la etapa 2 para esperar una caja, y realizar todo el ciclo hasta que llene el
+                almacén. </p>
+            <div class="col-12"><img class="img-fluid rounded-3 mb-5"
+                    src="{{ site.baseurl }}/images/GRAFCET_LEVEL1_P1.jpg" alt="..." /></div>
+            <p class="fs-5 mb-4">A continuación, se muestra la descripción tecnológica de las etapas de almacenamiento
+                por medio del Grafcet de nivel 2. </p>
+            <div class="col-12"><img class="img-fluid rounded-3 mb-5"
+                    src="{{ site.baseurl }}/images/GRAFCET_LEVEL2_P1.jpg" alt="..." /></div>
+            <p class="fs-5 mb-4">A continuación, se muestra la descripción Funcional de la etapa de distribución, de
+                igual manera que en el anterior espera estar inicializado y una señal de Start de distribución enviada
+                por el SCADA para entrar a la etapa 9. En la etapa 9 espera la orden la orden de un cliente, en el caso
+                de la simulación se envía por medio del SCADA un caso en específico de 5 diferentes casos ya
+                programados. Una vez llega el caso comienza la etapa 10, la cual toma la primera caja enviada en el caso
+                y le da la información al Gantry para que mueva la caja del almacén a la banda de distribución. Una vez
+                la caja está posicionada encima de la banda, entra en la etapa 11 para que el Gantry suelte la caja, Una
+                vez soltada la caja el sensor de la banda de distribución activa la etapa 12 esta etapa enciende la
+                banda de distribución. Aquí el programa hace dos tareas en paralelo, pregunta si es la última caja de la
+                orden o hace falta cajas de la orden, Si es la última caja el vuelve a la etapa 9 a esperar un caso, de
+                lo contrario va a la etapa 10 para que el Gantry vaya posicionando la caja siguiente. Por el otro lado
+                se tienen que la etapa 13 acciona la etiquetadora cuando la caja pasa por el sensor de esta,
+                activándola, cuando la caja ha sido etiquetada se activa la etapa 14 que es la que desactiva la
+                etiquetadora. La etapa 15 entra cuando la caja ha llegado al final de la banda y está en la celda
+                robotizada, en ese momento se desactiva la banda. </p>
             <p class="fs-5 mb-4"></p>
-            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/GRAFCET_LEVEL1_P2.jpg" alt="..." /></div>
-            <p class="fs-5 mb-4">A continuación, se muestra la descripción tecnológica de las etapas de distribución por medio del Grafcet de nivel 2.   </p>
-            <div class="col-12"><img class="img-fluid rounded-3 mb-5" src="{{ site.baseurl }}/images/GRAFCET_LEVEL2_P2.jpg" alt="..." /></div>
-            
+            <div class="col-12"><img class="img-fluid rounded-3 mb-5"
+                    src="{{ site.baseurl }}/images/GRAFCET_LEVEL1_P2.jpg" alt="..." /></div>
+            <p class="fs-5 mb-4">A continuación, se muestra la descripción tecnológica de las etapas de distribución por
+                medio del Grafcet de nivel 2. </p>
+            <div class="col-12"><img class="img-fluid rounded-3 mb-5"
+                    src="{{ site.baseurl }}/images/GRAFCET_LEVEL2_P2.jpg" alt="..." /></div>
+            <h3 class="fw-bolder">Descripción Programación Gantry </h3>
+            <p class="fs-5 mb-4">En el proyecto no se programa el Gantry por medio del PLC ya que el Gantry tiene su
+                controlador interno. Sin embargo, se platea una configuración de cómo sería la ruta que tiene que debe
+                realizar dependiendo de la etapa que este ejecutando, ya sea distribución o alimentación.</p>
+            <p class="fs-5 mb-4">El Gantry debe tener configurado la posición de cada una de las pilas de las cajas que
+                se tiene en el almacén. También una memoria de en qué posición hay caja y en que posición no hay caja.
+                Para esto cada pila tienen asignado un código de pila y la cantidad de cajas que hay por pila. Con esto
+                cada caja en cada posición debe tener asignado una coordenada en el Gantry.</p>
+            <p class="fs-5 mb-4">Para el llenado simplemente el Gantry sabe en qué posición falta caja y llena pila a
+                pila las cajas que hacen falta. En el aparte de distribución El Gantry tiene que sacar las cajas en un
+                orden especifico. Primero la pila 1 luego la 2 y así sucesivamente. Cuando tenga que realizar el llenado
+                tiene que guardar en que pila iba la distribución antes del llenado, y la siguiente distribución debe
+                comenzar a tomar la caja desde esa fila. Con esto se asegura que no se acumulen cajas y que siempre
+                salgan del almacén y se acerque a un sistema de almacenaje FIFO (First In - First Out).</p>
+            <p class="fs-5 mb-4">Algunas especificaciones técnicas del Gantry son que las velocidades de los ejes x y y
+                son de 2 m/s y en el eje z es 1.5 m/s. Velocidades que ayudaron a calcular tiempos de procesos. </p>
         </section>
-        
+
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-6">
                 <div class="text-center mb-5">
-                    <p class="lead fw-normal text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deserunt architecto enim eos accusantium fugit recusandae illo iste dignissimos possimus facere ducimus odit voluptatibus exercitationem, ex laudantium illum voluptatum corporis.</p>
                     <a class="text-decoration-none" href="#!">
                         View project
                         <i class="bi-arrow-right"></i>
